@@ -10,3 +10,22 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+module.exports = {
+    darkMode: 'class', // Aktifkan dark mode menggunakan class
+    content: [
+      "./resources/views/**/*.blade.php",
+      "./resources/js/**/*.js",
+    ],
+    theme: {
+      extend: {
+        colors: {
+          primary: "#6366F1", // Warna utama
+          secondary: "#CBD5E1", // Warna sekunder
+          darkBg: "#1E293B", // Background untuk dark mode
+          darkText: "#F8FAFC", // Teks untuk dark mode
+        },
+      },
+    },
+    plugins: [],
+  };
