@@ -33,7 +33,7 @@
             <div>
                 <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
                 <div class="flex space-x-4">
-                    <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                    <a href="https://www.facebook.com/" class="text-gray-300 hover:text-white transition duration-300">
                         <i class="fab fa-facebook-f"></i> <!-- Font Awesome Icon -->
                     </a>
                     <a href="#" class="text-gray-300 hover:text-white transition duration-300">
