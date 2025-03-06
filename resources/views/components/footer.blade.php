@@ -39,7 +39,7 @@
                     <a href="https://x.com/" class="text-gray-300 hover:text-white transition duration-300">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                    <a href="https://www.instagram.com/" class="text-gray-300 hover:text-white transition duration-300">
                         <i class="fab fa-instagram"></i>
                     </a>
                     <a href="#" class="text-gray-300 hover:text-white transition duration-300">
