@@ -34,7 +34,7 @@
                 <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
                 <div class="flex space-x-4">
                     <a href="https://www.facebook.com/" class="text-gray-300 hover:text-white transition duration-300">
-                        <i class="fab fa-facebook-f"></i> <!-- Font Awesome Icon -->
+                        <i class="fab fa-facebook-f"></i>
                     </a>
                     <a href="https://x.com/" class="text-gray-300 hover:text-white transition duration-300">
                         <i class="fab fa-twitter"></i>
@@ -42,7 +42,7 @@
                     <a href="https://www.instagram.com/" class="text-gray-300 hover:text-white transition duration-300">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                    <a href="https://www.youtube.com/" class="text-gray-300 hover:text-white transition duration-300">
                         <i class="fab fa-youtube"></i>
                     </a>
                 </div>
