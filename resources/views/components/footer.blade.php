@@ -5,7 +5,7 @@
             <!-- About Us -->
             <div>
                 <h3 class="text-xl font-semibold mb-4">About Us</h3>
-                <p class="text-gray-300">GoodBoks is dedicated to providing you with genuine books and a great shopping experience. We strive to support local businesses and promote ethical reading culture.</p>
+                <p class="text-gray-400">GoodBoks is dedicated to providing you with genuine books and a great shopping experience. We strive to support local businesses and promote ethical reading culture.</p>
             </div>
 
             <!-- Useful Links -->
