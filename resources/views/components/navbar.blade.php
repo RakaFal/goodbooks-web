@@ -18,6 +18,7 @@
                 <div class="hidden sm:ml-8 sm:block">
                     <div class="flex space-x-4">
                         <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">Home</a>
+                        <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">Trending Now</a>
                         <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">New Arrival</a>
                         <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">Best Seller</a>
                         <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">Sale</a>
