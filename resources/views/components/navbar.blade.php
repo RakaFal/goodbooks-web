@@ -13,7 +13,7 @@
             <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <!-- Logo GoodBooks bisa diklik -->
                 <div class="flex shrink-0 items-center">
-                    <a href="/" class="text-blue-500 text-xl font-bold hover:text-blue-400 transition duration-200">GoodBooks</a>
+                    <a href="/" class="text-blue-500 text-xl font-bold hover:text-blue-400 transition duration-300">GoodBooks</a>
                 </div>
                 <div class="hidden sm:ml-8 sm:block">
                     <div class="flex space-x-4">
