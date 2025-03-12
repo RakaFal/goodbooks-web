@@ -26,7 +26,7 @@
                 <p><strong>Preferred Formats:</strong> Hardback, eBook</p>
                 <p><strong>Wishlist:</strong></p>
                 <ul class="list-disc pl-5">
-                    <li>Book Title 1</li>
+                    <li>Hujan</li>
                     <li>Book Title 2</li>
                     <li>Book Title 3</li>
                 </ul>
