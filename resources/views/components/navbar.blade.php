@@ -28,7 +28,7 @@
             
             <!-- Search Bar -->
             <div class="relative w-64 hidden sm:block">
-                <input type="text" class="w-full p-2 pl-10 text-sm text-gray-700 bg-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" placeholder="Search...">
+                <input type="text" class="w-full p-2 pl-10 text-sm text-gray-700 bg-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" placeholder="Search for books...">
                 <svg class="absolute left-3 top-2.5 size-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M15 10a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
                 </svg>
