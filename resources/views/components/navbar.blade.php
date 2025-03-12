@@ -21,7 +21,7 @@
                         <a href="#trending" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">Trending Now</a>
                         <a href="#new-arrival" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">New Arrival</a>
                         <a href="#best-seller" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">Best Seller</a>
-                        <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">Sale</a>
+                        <a href="#sale" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">Sale</a>
                     </div>
                 </div>
             </div>

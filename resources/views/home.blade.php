@@ -120,7 +120,7 @@
         <a href="/produk" class="my-14 inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
             View All
         </a>
-        <hr>
+        <hr id="sale">
         <h1 class="my-12 text-4xl font-bold text-blue-600">Sale</h1>
         <p class="text-gray-700 mt-4">Temukan berbagai buku favoritmu dengan harga terbaik!</p>
     </section>
