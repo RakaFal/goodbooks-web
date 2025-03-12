@@ -1,12 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="text-center my-12">
+    <section class="text-center my-12" id="trending">
         <h1 class="text-4xl font-bold text-blue-600">Welcome Dear Reader!</h1>
         <p class="text-gray-700 mt-4">What's Trending Today!</p>
-        <!-- <a href="/produk" class="mt-6 inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
-            Lihat Produk
-        </a> -->
     </section>
     
     {{-- Daftar Produk (Dummy Sementara) --}}
@@ -47,7 +44,7 @@
         <a href="/produk" class="my-10 inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
             View All
         </a>
-        <hr>
+        <hr id="new-arrival">
         <h1 class="my-14 text-4xl font-bold text-blue-600">New Arrivals</h1>
         <p class="text-gray-700 mt-4">Temukan berbagai buku favoritmu dengan harga terbaik!</p>
     </section>
