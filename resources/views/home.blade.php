@@ -3,7 +3,7 @@
 @section('content')
 
     <!-- Trending Now -->
-    <section class="text-center py-10 mt-25" id="trending-now">
+    <section class="text-center py-10 mt-25">
         <h1 class="text-4xl font-bold text-blue-600">Welcome Dear Reader!</h1>
         <p class="text-gray-700 mt-4">What's Trending Today!</p>
     </section>
@@ -45,11 +45,11 @@
         </a>
     </section>
 
-    <hr id="new-arrival">
+    <hr style="color: white" id="new-arrivals">
 
     <!-- New Arrival -->
-    <section class="text-center my-20">  
-        <h1 class="my-14 text-4xl font-bold text-blue-600">New Arrivals</h1>
+    <section class="text-center py-10 mt-25">  
+        <h1 class="text-4xl font-bold text-blue-600">New Arrivals</h1>
         <p class="text-gray-700 mt-4">Temukan berbagai buku favoritmu dengan harga terbaik!</p>
     </section>
 
@@ -90,11 +90,11 @@
         </a>
     </section>
 
-    <hr id="best-seller">
+    <hr style="color: white" id="best-seller">
 
     <!-- Best Seller -->
-    <section class="text-center my-20">
-        <h1 class="my-14 text-4xl font-bold text-blue-600">Best Seller</h1>
+    <section class="text-center py-10 mt-25">
+        <h1 class="text-4xl font-bold text-blue-600">Best Seller</h1>
         <p class="text-gray-700 mt-4">Temukan berbagai buku favoritmu dengan harga terbaik!</p>
     </section>
 
@@ -135,10 +135,10 @@
         </a>
     </section>
 
-    <hr id="sale">
+    <hr style="color: white" id="sale">
 
-    <section class="text-center my-20">
-        <h1 class="my-14 text-4xl font-bold text-blue-600">Sale</h1>
+    <section class="text-center py-10 mt-25">
+        <h1 class="text-4xl font-bold text-blue-600">Sale</h1>
         <p class="text-gray-700 mt-4">Temukan berbagai buku favoritmu dengan harga terbaik!</p>
     </section>
 

@@ -18,16 +18,16 @@
 
     <!-- Kategori (Lebih Luas) -->
     <div class="col-span-9 col-start-3 row-start-3 flex justify-center space-x-10">
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Buku Terbaru</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Best Seller</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Promo</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Fiksi</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Non-Fiksi</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Promo</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Buku Terbaru</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Best Seller</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Promo</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Fiksi</a>
+        <a href="/" class="text-gray-700 hover:text-blue-500 font-medium">Trending Now</a>
+        <a href="#new-arrivals" class="text-gray-700 hover:text-blue-500 font-medium">New Arrivals</a>
+        <a href="#best-seller" class="text-gray-700 hover:text-blue-500 font-medium">Best Seller</a>
+        <a href="#sale" class="text-gray-700 hover:text-blue-500 font-medium">Sale</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Fiction</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Non-Fiction</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Romantic</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Horror</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Thriller</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">History</a>
     </div>
 
     <!-- Cart -->
