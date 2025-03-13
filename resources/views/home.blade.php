@@ -1,12 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="text-center my-12" id="trending-now">
+
+    <!-- Trending Now -->
+    <section class="text-center my-20" id="trending-now">
         <h1 class="text-4xl font-bold text-blue-600">Welcome Dear Reader!</h1>
         <p class="text-gray-700 mt-4">What's Trending Today!</p>
     </section>
     
-    {{-- Daftar Produk (Dummy Sementara) --}}
     <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div class="bg-white shadow-md p-4 rounded-lg">
             <img src="{{ asset('images/bumi.png') }}" alt="bumi" class="w-full h-48 object-contain">
@@ -38,8 +39,7 @@
         </div>
     </section>
 
-    {{-- New Arrival --}}
-
+    <!-- New Arrival -->
     <section class="text-center my-12">      
         <a href="/produk" class="my-10 inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
             View All
