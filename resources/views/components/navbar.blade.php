@@ -1,4 +1,4 @@
-<nav class="bg-white shadow-md" id="home, trending">
+<nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -11,14 +11,13 @@
                 </button>
             </div>
             <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <!-- Logo GoodBooks bisa diklik -->
+                <!-- Logo -->
                 <div class="flex shrink-0 items-center">
                     <a href="/" class="text-blue-500 text-xl font-bold hover:text-blue-400 transition duration-300">GoodBooks</a>
                 </div>
                 <div class="hidden sm:ml-8 sm:block">
                     <div class="flex space-x-4">
-                        <a href="#home" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">Home</a>
-                        <a href="#trending" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">Trending Now</a>
+                        <a href="#trending-now" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">Trending Now</a>
                         <a href="#new-arrival" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">New Arrival</a>
                         <a href="#best-seller" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">Best Seller</a>
                         <a href="#sale" class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-500">Sale</a>
@@ -53,11 +52,11 @@
                             <img class="size-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
                         </button>
                     </div>
-                    <!-- <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 ring-1 shadow-lg ring-black/5">
+                    <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 ring-1 shadow-lg ring-black/5">
                         <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-500">Your Profile</a>
                         <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-500">Settings</a>
                         <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:text-blue-500">Sign out</a>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>

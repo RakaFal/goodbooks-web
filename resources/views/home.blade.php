@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="text-center my-12">
+    <section class="text-center my-12" id="trending-now">
         <h1 class="text-4xl font-bold text-blue-600">Welcome Dear Reader!</h1>
         <p class="text-gray-700 mt-4">What's Trending Today!</p>
     </section>
