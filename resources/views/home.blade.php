@@ -39,15 +39,20 @@
         </div>
     </section>
 
-    <!-- New Arrival -->
     <section class="text-center my-12">      
-        <a href="/produk" class="my-10 inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+        <a href="/produk" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
             View All
         </a>
-        <hr id="new-arrival">
+    </section>
+
+    <hr id="new-arrival">
+
+    <!-- New Arrival -->
+    <section class="text-center my-12">  
         <h1 class="my-14 text-4xl font-bold text-blue-600">New Arrivals</h1>
         <p class="text-gray-700 mt-4">Temukan berbagai buku favoritmu dengan harga terbaik!</p>
     </section>
+
     <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
     <div class="bg-white shadow-md p-4 rounded-lg">
             <img src="{{ asset('images/bulan.png') }}" alt="bulan" class="w-full h-48 object-contain">
@@ -78,6 +83,7 @@
             <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Beli</button>
         </div>
     </section>
+    
     <section class="text-center my-12">
         <a href="/produk" class="my-14 inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
             View All
