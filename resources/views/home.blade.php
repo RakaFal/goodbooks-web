@@ -5,9 +5,11 @@
 <!-- Banner Section -->
 <section class="relative flex justify-center w-full py-8 mt-20">
     <div class="w-full relative">
+
         <!-- Swiper -->
         <div class="swiper mySwiper w-full h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden relative group">
             <div class="swiper-wrapper">
+
                 <!-- Slide 1 -->
                 <div class="swiper-slide">
                     <div class="w-full h-full bg-black bg-cover bg-center flex items-center justify-center text-white text-center"
@@ -58,6 +60,7 @@
 <section class="container mx-auto p-4 rounded-lg shadow-2xl">
     <h2 class="text-xl md:text-2xl font-bold text-gray-700 text-center mb-4">Kategori Populer</h2>
     <div class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-4 text-center">
+        
         <!-- Kategori 1 -->
         <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
             <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-200 group-hover:bg-blue-600 transition">
@@ -258,6 +261,8 @@
 </section>
 
 <hr style="color: #f3f4f6" id="sale">
+
+<!-- Sale -->
 
 <section class="text-center py-10 mt-25">
     <h1 class="text-4xl font-bold text-blue-600">Sale</h1>

@@ -6,7 +6,7 @@
         </a>
     </div>
 
-    <!-- Search Bar (Lebih Panjang) -->
+    <!-- Search Bar -->
     <div class="hidden md:flex flex-grow mx-4 md:mx-6 transition-all duration-300 col-span-9 row-span-2 col-start-3 items-center">
         <div class="relative w-full">
             <input type="text" class="w-full p-4 pl-12 text-gray-700 bg-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" placeholder="Cari buku favoritmu...">
@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <!-- Kategori (Lebih Luas) -->
+    <!-- Kategori -->
     <div class="col-span-9 col-start-3 row-start-3 flex justify-center space-x-10">
         <a href="/" class="text-gray-700 hover:text-blue-500 font-medium">Trending Now</a>
         <a href="#new-arrivals" class="text-gray-700 hover:text-blue-500 font-medium">New Arrivals</a>

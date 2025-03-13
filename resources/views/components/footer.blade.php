@@ -1,7 +1,9 @@
 <footer class="bg-blue-800 text-white py-8">
     <div class="container mx-auto px-6">
+        
         <!-- Footer Links Section -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
             <!-- About Us -->
             <div>
                 <h3 class="text-xl font-semibold mb-4">About Us</h3>
