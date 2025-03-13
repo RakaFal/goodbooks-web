@@ -3,7 +3,7 @@
 @section('content')
 
     <!-- Trending Now -->
-    <section class="text-center my-20" id="trending-now">
+    <section class="text-center py-10 mt-25" id="trending-now">
         <h1 class="text-4xl font-bold text-blue-600">Welcome Dear Reader!</h1>
         <p class="text-gray-700 mt-4">What's Trending Today!</p>
     </section>
@@ -93,8 +93,8 @@
     <hr id="best-seller">
 
     <!-- Best Seller -->
-    <section class="text-center my-12">
-        <h1 class="my-12 text-4xl font-bold text-blue-600">Best Seller</h1>
+    <section class="text-center my-20">
+        <h1 class="my-14 text-4xl font-bold text-blue-600">Best Seller</h1>
         <p class="text-gray-700 mt-4">Temukan berbagai buku favoritmu dengan harga terbaik!</p>
     </section>
 
@@ -130,15 +130,15 @@
     </section>
 
     <section class="text-center my-12">
-        <a href="/produk" class="my-14 inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+        <a href="/produk" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
             View All
         </a>
     </section>
 
     <hr id="sale">
 
-    <section class="text-center my-12">
-        <h1 class="my-12 text-4xl font-bold text-blue-600">Sale</h1>
+    <section class="text-center my-20">
+        <h1 class="my-14 text-4xl font-bold text-blue-600">Sale</h1>
         <p class="text-gray-700 mt-4">Temukan berbagai buku favoritmu dengan harga terbaik!</p>
     </section>
 
@@ -172,10 +172,11 @@
             <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Beli</button>
         </div>
     </section>
+
     <section class="text-center my-12">
-        <a href="/produk" class="my-14 inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+        <a href="/produk" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
             View All
         </a>
-        <hr>
     </section>
+    
 @endsection
