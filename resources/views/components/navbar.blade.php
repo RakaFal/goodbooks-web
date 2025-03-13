@@ -1,13 +1,13 @@
-<div class="h-30 grid grid-cols-12 grid-rows-3 gap-4 p-4 bg-white shadow-md w-full fixed top-0 left-0 z-50">
+<div class="fixed top-0 left-0 w-full bg-white shadow-md z-50 transition-all duration-300 h-30 grid grid-cols-12 grid-rows-3 gap-4 p-4">
     <!-- Logo -->
-    <div class="col-span-2 row-span-3 flex justify-center items-center">
-        <a href="/" class="text-blue-500 text-3xl font-bold hover:text-blue-400 transition duration-300">
+    <div class="container mx-auto flex items-center justify-between px-4 py-2 md:py-3 lg:py-4 transition-all duration-300 col-span-2 row-span-3">
+        <a href="/" class="text-blue-500 text-lg md:text-xl lg:text-3xl font-bold hover:text-blue-400 transition-all duration-300">
             GoodBooks
         </a>
     </div>
 
     <!-- Search Bar (Lebih Panjang) -->
-    <div class="col-span-9 row-span-2 col-start-3 flex items-center">
+    <div class="hidden md:flex flex-grow mx-4 md:mx-6 transition-all duration-300 col-span-9 row-span-2 col-start-3 items-center">
         <div class="relative w-full">
             <input type="text" class="w-full p-4 pl-12 text-gray-700 bg-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" placeholder="Cari buku favoritmu...">
             <svg class="absolute left-4 top-4 size-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
