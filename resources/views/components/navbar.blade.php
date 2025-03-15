@@ -32,11 +32,11 @@
 
     <!-- Cart -->
     <div class="row-span-3 col-start-12 row-start-1 flex justify-center items-center">
-        <button type="button" class="relative rounded-full bg-slate-200 p-2 text-gray-700 hover:text-blue-500 focus:ring-2 focus:ring-blue-500">
+        <a href="/cart" class="relative rounded-full bg-slate-200 p-2 text-gray-700 hover:text-blue-500 focus:ring-2 focus:ring-blue-500"><a\>
             <span class="sr-only">View Cart</span>
             <svg class="size-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1 5h12l-1-5M10 18a2 2 0 1 1-4 0m10 0a2 2 0 1 1-4 0" />
             </svg>
-        </button>
+        </a>
     </div>
 </div>

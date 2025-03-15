@@ -11,7 +11,7 @@
     @vite(['resources/css/app.css'])
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 grid min-h-screen grid-rows-[1fr_auto]">
 
     <!-- Navbar -->
     @include('components.navbar')
