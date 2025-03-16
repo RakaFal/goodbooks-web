@@ -8,8 +8,14 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/books/{id}', [BookController::class, 'show'])->name('book.detail');
+
 Route::get('/cart', function () {
     return view('cart');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
 });
 
 Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
