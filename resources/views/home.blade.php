@@ -16,7 +16,7 @@
                         style="background-image: url('https://source.unsplash.com/1600x600/?books,library');">
                         <div class="bg-black bg-opacity-50 p-6 md:p-10 rounded-lg">
                             <h1 class="text-2xl md:text-4xl font-bold">Diskon Besar Buku Favoritmu!</h1>
-                            <p class="mt-2 text-sm md:text-lg">Hemat hingga <span class="text-yellow-400 font-bold">50%</span> sekarang.</p>
+                            <p class="mt-2 text-sm md:text-lg">Hemat hingga <span class="text-yellow-400 font-bold">70%</span> sekarang.</p>
                         </div>
                     </div>
                 </div>
