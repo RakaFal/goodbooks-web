@@ -27,7 +27,7 @@
                         style="background-image: url('https://source.unsplash.com/1600x600/?bookstore,reading');">
                         <div class="bg-black bg-opacity-50 p-6 md:p-10 rounded-lg">
                             <h1 class="text-2xl md:text-4xl font-bold">Temukan Koleksi Terbaru!</h1>
-                            <p class="mt-2 text-sm md:text-lg">Buku-buku terbaru dengan harga terbaik.</p>
+                            <p class="mt-2 text-sm md:text-lg">Buku-buku terbaru dengan harga termurah.</p>
                         </div>
                     </div>
                 </div>
