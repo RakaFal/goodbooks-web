@@ -173,7 +173,7 @@
 <hr style="color: #f3f4f6" id="new-arrivals">
 
 <!-- New Arrival -->
-<section class="text-center py-10 mt-25">
+<section class="text-center py-10">
     <h1 class="text-4xl font-bold text-blue-600">New Arrivals</h1>
     <p class="text-gray-700 mt-4">Temukan berbagai buku favoritmu dengan harga terbaik!</p>
 </section>
@@ -218,7 +218,7 @@
 <hr style="color: #f3f4f6" id="best-seller">
 
 <!-- Best Seller -->
-<section class="text-center py-10 mt-25">
+<section class="text-center py-10">
     <h1 class="text-4xl font-bold text-blue-600">Best Seller</h1>
     <p class="text-gray-700 mt-4">Temukan berbagai buku favoritmu dengan harga terbaik!</p>
 </section>
@@ -264,7 +264,7 @@
 
 <!-- Sale -->
 
-<section class="text-center py-10 mt-25">
+<section class="text-center py-10">
     <h1 class="text-4xl font-bold text-blue-600">Sale</h1>
     <p class="text-gray-700 mt-4">Temukan berbagai buku favoritmu dengan harga terbaik!</p>
 </section>
