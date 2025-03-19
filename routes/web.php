@@ -1,12 +1,20 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CartController;
 
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/login', function () {
+    return view('auth/login');
+});
+
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
 
 Route::get('/books/{id}', [BookController::class, 'show'])->name('book.detail');
 
