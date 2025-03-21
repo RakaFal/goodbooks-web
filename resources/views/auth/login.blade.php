@@ -8,7 +8,7 @@
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="bg-white p-8 rounded-lg shadow-lg w-96">
-        <h2 class="text-2xl font-bold text-gray-700 text-center">Login ke GoodBooks</h2>
+        <h2 class="text-2xl font-bold text-gray-700 text-center">Login - GoodBooks</h2>
         
         <form action="{{ route('login') }}" method="POST" class="mt-6">
             @csrf
@@ -26,7 +26,7 @@
             <button type="submit" class="w-full bg-blue-500 text-white p-3 rounded mt-6 hover:bg-blue-600 transition">Login</button>
         </form>
         
-        <p class="text-center text-gray-600 text-sm mt-4">Belum punya akun? <a href="{{ route('register') }}" class="text-blue-500 hover:underline">Daftar di sini</a></p>
+        <p class="text-center text-gray-600 text-sm mt-4">Don't have an account yet? <a href="{{ route('register') }}" class="text-blue-500 hover:underline">Register Here</a></p>
     </div>
 </body>
 </html>
