@@ -42,6 +42,17 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="w-full h-full bg-black bg-cover bg-center flex items-center justify-center text-white text-center"
+                        style="background-image: url('https://source.unsplash.com/1600x600/?study,desk');">
+                        <div class="bg-black bg-opacity-50 p-6 md:p-10 rounded-lg">
+                            <h1 class="text-2xl md:text-4xl font-bold">Pre-order saat ini juga!</h1>
+                            <p class="mt-2 text-sm md:text-lg">Pasti sampai tepat waktu.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Pagination -->
