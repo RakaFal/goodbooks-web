@@ -15,7 +15,7 @@
             <h1 class="text-2xl md:text-3xl font-bold text-gray-800">{{ $book->title }}</h1>
             <p class="text-gray-600">Penulis: <span class="font-semibold">{{ $book->author }}</span></p>
             <p class="text-gray-600">Kategori: <span class="font-semibold">{{ $book->category->name }}</span></p>
-            <p class="text-xl font-semibold text-blue-600">Rp{{ number_format($book->price, 0, ',', '.') }}</p>
+            <p class="text-xl font-semibold text-blue-600">Rp. {{ number_format($book->price, 0, ',', '.') }}</p>
 
             <!-- Rating -->
             <div class="flex items-center space-x-1">
