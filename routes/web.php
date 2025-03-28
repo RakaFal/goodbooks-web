@@ -31,17 +31,21 @@ Route::get('/cart', function () {
     return view('cart');
 });
 
-Route::get('/profile', function () {
-    return view('profile');
-});
-
 Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
 Route::post('/cart/update/{id}', [CartController::class, 'update'])->name('cart.update');
 Route::post('/cart/remove/{id}', [CartController::class, 'remove'])->name('cart.remove');
 Route::get('/checkout', [CartController::class, 'checkout'])->name('checkout');
 
+Route::get('/profile', function () {
+    return view('profile');
+});
+
 Route::middleware(['auth'])->get('/profile', [ProfileController::class, 'index'])->name('profile');
 
-Route::middleware(['auth', 'seller'])->group(function () {
-    Route::get('/seller/dashboard', [SellerDashboardController::class, 'index'])->name('seller.dashboard');
+Route::get('/dashboard', function () {
+    return view('admin/dashboard');
 });
+
+// Route::middleware(['auth', 'admin'])->group(function () {
+//     Route::get('/admin/dashboard', [SellerDashboardController::class, 'index'])->name('admin.dashboard');
+// });
