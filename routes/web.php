@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\SellerDashboardController;
 
 Route::get('/', function () {
     return view('home');
@@ -40,3 +41,7 @@ Route::post('/cart/remove/{id}', [CartController::class, 'remove'])->name('cart.
 Route::get('/checkout', [CartController::class, 'checkout'])->name('checkout');
 
 Route::middleware(['auth'])->get('/profile', [ProfileController::class, 'index'])->name('profile');
+
+Route::middleware(['auth', 'seller'])->group(function () {
+    Route::get('/seller/dashboard', [SellerDashboardController::class, 'index'])->name('seller.dashboard');
+});
