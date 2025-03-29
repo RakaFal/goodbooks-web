@@ -40,7 +40,7 @@ Route::get('/profile', function () {
     return view('profile');
 });
 
-Route::middleware(['auth'])->get('/profile', [ProfileController::class, 'index'])->name('profile');
+// Route::middleware(['auth'])->get('/profile', [ProfileController::class, 'index'])->name('profile');
 
 Route::get('/dashboard', function () {
     return view('admin/dashboard');
