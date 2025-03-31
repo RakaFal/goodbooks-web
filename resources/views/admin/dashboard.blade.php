@@ -10,7 +10,7 @@
 
     <!-- Sidebar -->
     <aside class="w-64 bg-blue-600 text-white h-screen p-6">
-        <h1 class="text-2xl font-bold mb-6">Penjual Buku</h1>
+        <h1 class="text-2xl font-bold mb-6">Seller Books</h1>
         <nav>
             <a href="#" class="block py-2 px-4 hover:bg-blue-500 rounded">Dashboard</a>
             <a href="#" class="block py-2 px-4 hover:bg-blue-500 rounded">Daftar Buku</a>
