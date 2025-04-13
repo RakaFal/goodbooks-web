@@ -26,7 +26,7 @@
         <nav class="bg-white p-4 shadow-md rounded-md flex justify-between items-center">
             <h2 class="text-lg font-bold">Dashboard Penjual</h2>
             <div class="flex items-center space-x-4">
-                <span class="text-gray-700">Marty</span>
+                <span class="text-gray-700">Martypasha</span>
                 <img src="https://via.placeholder.com/40" class="rounded-full" alt="Seller">
             </div>
         </nav>
