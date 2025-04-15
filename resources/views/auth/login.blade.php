@@ -9,7 +9,9 @@
 <body class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600">
 
     <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
-        <h2 class="text-2xl font-bold text-gray-800 text-center">Login ke GoodBooks</h2>
+        <h2 class="text-2xl font-bold text-gray-800 text-center">Login ke 
+            <a href="/" class="text-blue-500">GoodBooks</a>
+        </h2>
         <p class="text-gray-500 text-center mt-2">Masuk untuk mengelola akun Anda</p>
 
         <!-- Form Login -->

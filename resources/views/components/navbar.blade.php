@@ -41,7 +41,7 @@
         </a>
 
         <!-- Profile -->
-        <a href="/profile" class="relative rounded-full bg-slate-200 p-2 text-gray-700 hover:text-blue-500 focus:ring-2 focus:ring-blue-500">
+        <a href="/login" class="relative rounded-full bg-slate-200 p-2 text-gray-700 hover:text-blue-500 focus:ring-2 focus:ring-blue-500">
             <span class="sr-only">Profile</span>
             <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 14c4.418 0 8 1.79 8 4v2H4v-2c0-2.21 3.582-4 8-4zM12 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />

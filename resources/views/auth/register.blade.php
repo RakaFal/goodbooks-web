@@ -9,7 +9,9 @@
 <body class="h-screen flex items-center justify-center bg-gradient-to-r from-green-500 to-blue-600">
 
     <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
-        <h2 class="text-2xl font-bold text-gray-800 text-center">Buat Akun GoodBooks</h2>
+        <h2 class="text-2xl font-bold text-gray-800 text-center">Buat Akun 
+            <a href="/" class="text-blue-500">GoodBooks</a>
+        </h2>
         <p class="text-gray-500 text-center mt-2">Daftar untuk mulai berjualan</p>
 
         <!-- Form Register -->
