@@ -37,14 +37,16 @@
                 <input type="password" name="password_confirmation" class="w-full mt-1 px-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none" placeholder="Ulangi password" required>
             </div>
 
-            <div class="mt-4 flex items-center">
+            <div class="my-4 flex items-center">
                 <input type="checkbox" name="terms" class="text-green-500">
                 <span class="ml-2 text-gray-600 text-sm">Saya menyetujui <a href="#" class="text-blue-500 hover:underline">syarat & ketentuan</a></span>
             </div>
 
-            <button type="submit" class="w-full mt-6 bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-bold transition duration-300">
+            <a href="/dashboard" class="w-full mx-40 bg-green-500 hover:bg-green-600 text-white px-3 py-3 rounded-lg font-bold transition duration-300">Daftar</a>
+
+            <!-- <button type="submit" class="w-full mt-6 bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-bold transition duration-300">
                 Daftar
-            </button>
+            </button> -->
 
             <p class="text-gray-600 text-center mt-4">Sudah punya akun? 
                 <a href="{{ route('login') }}" class="text-blue-500 hover:underline">Login</a>

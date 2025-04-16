@@ -44,7 +44,7 @@ Route::get('/profile', function () {
 
 Route::get('/dashboard', function () {
     return view('admin/dashboard');
-});
+})->name('dashboard');
 
 // Route::middleware(['auth', 'admin'])->group(function () {
 //     Route::get('/admin/dashboard', [SellerDashboardController::class, 'index'])->name('admin.dashboard');

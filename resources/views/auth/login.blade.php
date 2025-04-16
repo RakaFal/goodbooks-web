@@ -27,7 +27,7 @@
                 <input type="password" name="password" class="w-full mt-1 px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none" placeholder="Masukkan password" required>
             </div>
 
-            <div class="flex justify-between items-center mt-4">
+            <div class="flex justify-between items-center my-4">
                 <label class="flex items-center">
                     <input type="checkbox" name="remember" class="text-blue-500">
                     <span class="ml-2 text-gray-600 text-sm">Ingat saya</span>
@@ -35,9 +35,11 @@
                 <a href="#" class="text-sm text-blue-500 hover:underline">Lupa Password?</a>
             </div>
 
-            <button type="submit" class="w-full mt-6 bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-bold transition duration-300">
+            <a href="/dashboard" class="w-full mx-40 bg-blue-500 hover:bg-blue-600 text-white px-3 py-3 rounded-lg font-bold transition duration-300">Login</a>
+
+            <!-- <button type="submit" class="w-full mt-6 bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-bold transition duration-300">
                 Login
-            </button>
+            </button> -->
 
             <p class="text-gray-600 text-center mt-4">Belum punya akun? 
                 <a href="{{ route('register') }}" class="text-blue-500 hover:underline">Daftar</a>
