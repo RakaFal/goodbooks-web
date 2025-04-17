@@ -1,13 +1,13 @@
 <div class="fixed top-0 left-0 w-full bg-white shadow-md z-50 transition-all duration-300 h-20 grid grid-cols-12 grid-rows-3 gap-4 p-4">
     <!-- Logo -->
-    <div class="container mx-auto flex items-center justify-between px-4 py-2 md:py-3 lg:py-4 transition-all duration-300 col-span-2 row-span-3">
+    <div class="hidden md:flex container mx-auto items-center justify-between px-4 py-2 md:py-3 lg:py-4 transition-all duration-300 col-span-2 row-span-3">
         <a href="/" class="text-blue-500 pl-14 text-lg md:text-xl lg:text-3xl font-bold hover:text-blue-400 transition-all duration-300">
             GoodBooks
         </a>
     </div>
 
     <!-- Search Bar -->
-    <div class="hidden md:flex flex-grow mx-4 md:mx-10 transition-all duration-300 col-span-9 row-span-2 col-start-3 items-center">
+    <div class="flex-grow mx-4 md:mx-10 transition-all duration-300 col-span-9 row-span-2 col-start-3 items-center">
         <div class="relative w-full">
             <input type="text" class="w-full p-2 pl-12 text-gray-700 bg-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" placeholder="Cari buku favoritmu...">
             <svg class="absolute left-4 top-2 size-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -17,7 +17,7 @@
     </div>
 
     <!-- Kategori -->
-    <div class="col-span-9 col-start-3 row-start-3 flex justify-center space-x-10 text-xs">
+    <div class="hidden md:flex col-span-9 col-start-3 row-start-3 justify-center space-x-10 text-xs">
         <a href="/" class="text-gray-700 hover:text-blue-500 font-medium">Trending Now</a>
         <a href="#new-arrivals" class="text-gray-700 hover:text-blue-500 font-medium">New Arrivals</a>
         <a href="#best-seller" class="text-gray-700 hover:text-blue-500 font-medium">Best Seller</a>
