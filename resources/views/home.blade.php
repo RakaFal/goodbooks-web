@@ -150,28 +150,24 @@
         <h2 class="mt-4 font-bold">Bumi</h2>
         <p class="text-gray-900">Tere Liye</p>
         <p class="text-gray-600">Rp 89.000</p>
-        <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Beli</button>
     </div>
     <div class="bg-white shadow-md p-4 rounded-lg">
         <img src="{{ asset('images/pulang-pergi.png') }}" alt="pulang-pergi" class="w-full h-48 object-contain">
         <h2 class="mt-4 font-bold">Pulang Pergi</h2>
         <p class="text-gray-900">Tere Liye</p>
         <p class="text-gray-600">Rp 99.000</p>
-        <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Beli</button>
     </div>
     <div class="bg-white shadow-md p-4 rounded-lg">
         <img src="{{ asset('images/kami-(bukan)-jonggos-berdasi.png') }}" alt="kami-(bukan)-jonggos-berdasi" class="w-full h-48 object-contain">
         <h2 class="mt-4 font-bold">Kami (Bukan) Jonggos Berdasi</h2>
         <p class="text-gray-900">J.S. Khairen</p>
         <p class="text-gray-600">Rp 79.000</p>
-        <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Beli</button>
     </div>
     <div class="bg-white shadow-md p-4 rounded-lg">
         <img src="{{ asset('images/tintin-harta-karun.png') }}" alt="tintin-harta-karun" class="w-full h-48 object-contain">
         <h2 class="mt-4 font-bold">Petualangan Tintin</h2>
         <p class="text-gray-900">Herge</p>
         <p class="text-gray-600">Rp 129.000</p>
-        <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Beli</button>
     </div>
 </section>
 
@@ -195,28 +191,24 @@
         <h2 class="mt-4 font-bold">Bulan</h2>
         <p class="text-gray-900">Tere Liye</p>
         <p class="text-gray-600">Rp 89.000</p>
-        <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Beli</button>
     </div>
     <div class="bg-white shadow-md p-4 rounded-lg">
         <img src="{{ asset('images/si-anak-kuat.png') }}" alt="si-anak-kuat" class="w-full h-48 object-contain">
         <h2 class="mt-4 font-bold">Si Anak Kuat</h2>
         <p class="text-gray-900">Tere Liye</p>
         <p class="text-gray-600">Rp 79.000</p>
-        <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Beli</button>
     </div>
     <div class="bg-white shadow-md p-4 rounded-lg">
         <img src="{{ asset('images/laskar-pelangi.png') }}" alt="laskar-pelangi" class="w-full h-48 object-contain">
         <h2 class="mt-4 font-bold">Laskar Pelangi</h2>
         <p class="text-gray-900">Andrea Hirata</p>
         <p class="text-gray-600">Rp 99.000</p>
-        <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Beli</button>
     </div>
     <div class="bg-white shadow-md p-4 rounded-lg">
         <img src="{{ asset('images/komet-minor.png') }}" alt="komet-minor" class="w-full h-48 object-contain">
         <h2 class="mt-4 font-bold">Komet Minor</h2>
         <p class="text-gray-900">Tere Liye</p>
         <p class="text-gray-600">Rp 89.000</p>
-        <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Beli</button>
     </div>
 </section>
 
@@ -291,7 +283,6 @@
             <h2 class="mt-4 font-bold">Terusir</h2>
             <p class="text-gray-900">Hamka</p>
             <p class="text-gray-600">Rp 39.000</p>
-            <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Beli</button>
         </div>
     </a>
     <a href="">
@@ -300,7 +291,6 @@
             <h2 class="mt-4 font-bold">Gustira</h2>
             <p class="text-gray-900">Kata Kokoh</p>
             <p class="text-gray-600">Rp 59.000</p>
-            <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Beli</button>
         </div>
     </a>
     <a href="">
@@ -309,7 +299,6 @@
             <h2 class="mt-4 font-bold">Mozachiko</h2>
             <p class="text-gray-900">Poppi Pertiwi</p>
             <p class="text-gray-600">Rp 49.000</p>
-            <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Beli</button>
         </div>
     </a>
     <a href="">
@@ -318,7 +307,6 @@
             <h2 class="mt-4 font-bold">Ruang Sunyi</h2>
             <p class="text-gray-900">Herge</p>
             <p class="text-gray-600">Rp 59.000</p>
-            <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Beli</button>
         </div>
     </a>
 </section>
