@@ -31,7 +31,7 @@
     </div>
 
     <!-- Cart & Profile Section -->
-    <div class="row-span-3 col-start-12 row-start-1 flex items-center space-x-3">
+    <div class="hidden md:flex row-span-3 col-start-12 row-start-1 items-center space-x-3">
         <!-- Cart -->
         <a href="/cart" class="relative rounded-full bg-slate-200 p-2 text-gray-700 hover:text-blue-500 focus:ring-2 focus:ring-blue-500">
             <span class="sr-only">View Cart</span>
