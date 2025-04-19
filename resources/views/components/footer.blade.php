@@ -25,7 +25,6 @@
             <div>
                 <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
                 <ul>
-                    <li><a href="/sale" class="text-gray-300 hover:text-white transition duration-300">Trending Now</a></li>
                     <li><a href="/new-arrivals" class="text-gray-300 hover:text-white transition duration-300">New Arrivals</a></li>
                     <li><a href="/best-sellers" class="text-gray-300 hover:text-white transition duration-300">Best Sellers</a></li>
                     <li><a href="/sale" class="text-gray-300 hover:text-white transition duration-300">Sale</a></li>
