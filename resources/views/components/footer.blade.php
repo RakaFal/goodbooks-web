@@ -47,6 +47,9 @@
                     <a href="https://www.youtube.com/" class="text-gray-300 hover:text-white transition duration-300">
                         <i class="fab fa-youtube"></i>
                     </a>
+                    <a href="https://www.tiktok.com/" class="text-gray-300 hover:text-white transition duration-300">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
                 </div>
             </div>
         </div>
