@@ -56,7 +56,7 @@
 
         <!-- Footer Bottom Section -->
         <div class="border-t border-gray-700 mt-8 pt-4 text-center">
-            <p class="text-gray-300 text-sm">&copy; 2025 GoodBoks. All rights reserved.</p>
+            <p class="text-gray-300 text-sm">&copy; 2025 GoodBoks. All rights reserved. Made with love</p>
         </div>
     </div>
 </footer>
