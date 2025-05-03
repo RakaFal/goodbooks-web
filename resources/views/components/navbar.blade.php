@@ -18,16 +18,16 @@
 
     <!-- Kategori -->
     <div class="hidden md:flex col-span-9 col-start-3 row-start-3 justify-center space-x-10 text-xs">
-        <a href="/" class="text-gray-700 hover:text-blue-500 font-medium">Trending Now</a>
-        <a href="#new-arrivals" class="text-gray-700 hover:text-blue-500 font-medium">New Arrivals</a>
-        <a href="#best-seller" class="text-gray-700 hover:text-blue-500 font-medium">Best Seller</a>
-        <a href="#sale" class="text-gray-700 hover:text-blue-500 font-medium">Sale</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Fiction</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Non-Fiction</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Romantic</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Horror</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">Thriller</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">History</a>
+        <a href="/" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Trending Now</a>
+        <a href="#new-arrivals" class="text-gray-700 hover:text-blue-500 font-medium duration-500">New Arrivals</a>
+        <a href="#best-seller" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Best Seller</a>
+        <a href="#sale" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Sale</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Fiction</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Non-Fiction</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Romantic</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Horror</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Thriller</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium duration-500">History</a>
     </div>
 
     <!-- Cart & Profile Section -->

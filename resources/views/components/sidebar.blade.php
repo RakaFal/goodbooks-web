@@ -4,8 +4,15 @@
     <nav>
         <a href="{{ route('dashboard') }}" class="block py-3 px-4 mb-3 hover:bg-blue-500 rounded-lg transition">Dashboard</a>
         <a href="{{ route('buku') }}" class="block py-3 px-4 mb-3 hover:bg-blue-500 rounded-lg transition">Daftar Buku</a>
-        <a href="{{ route('') }}" class="block py-3 px-4 mb-3 hover:bg-blue-500 rounded-lg transition">Pesanan</a>
-        <a href="{{ route('') }}" class="block py-3 px-4 mb-3 hover:bg-blue-500 rounded-lg transition">Laporan</a>
-        <a href="{{ route('logout') }}" class="block py-3 px-4 mb-3 hover:bg-red-600 rounded-lg transition">Logout</a>
+        <a href="#" class="block py-3 px-4 mb-3 hover:bg-blue-500 rounded-lg transition">Pesanan</a>
+        <a href="#" class="block py-3 px-4 mb-3 hover:bg-blue-500 rounded-lg transition">Laporan</a>
+        
+        <!-- Form logout -->
+        <form action="{{ route('logout') }}" method="POST">
+            @csrf
+            <button type="submit" class="block py-3 px-4 mb-3 hover:bg-red-600 rounded-lg transition w-full text-left">
+                Logout
+            </button>
+        </form>
     </nav>
 </aside>

@@ -7,13 +7,6 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
-namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-use App\Models\User;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-
 class AuthController extends Controller
 {
     public function showLoginForm()
@@ -29,9 +22,11 @@ class AuthController extends Controller
         ]);
 
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('/');
+            // Arahkan ke halaman dashboard jika login berhasil
+            return redirect()->intended(route('dashboard'));
         }
 
+        // Jika login gagal, kembali dengan pesan error
         return back()->withErrors(['email' => 'Email atau password salah']);
     }
 
@@ -56,8 +51,7 @@ class AuthController extends Controller
 
         Auth::login($user);
 
-        return redirect('/');
+        // Setelah registrasi berhasil, alihkan ke halaman login
+        return redirect()->route('login')->with('success', 'Akun berhasil dibuat! Silakan login.');
     }
 }
-
-namespace App\Http\Controllers;

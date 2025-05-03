@@ -6,16 +6,6 @@
     <title>Dashboard Seller</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        /* Membuat sidebar sticky */
-        aside {
-            position: -webkit-sticky; /* Untuk browser yang mendukung prefix */
-            position: sticky;
-            top: 0;
-            height: 100vh; /* Pastikan sidebar sepanjang tinggi viewport */
-            z-index: 100; /* Agar sidebar berada di atas konten */
-        }
-    </style>
 </head>
 <body class="bg-gray-50 flex">
 
