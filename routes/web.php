@@ -49,3 +49,7 @@ Route::get('/dashboard', function () {
 // Route::middleware(['auth', 'admin'])->group(function () {
 //     Route::get('/admin/dashboard', [SellerDashboardController::class, 'index'])->name('admin.dashboard');
 // });
+
+Route::get('/buku', function () {
+    return view('admin/daftar-buku');
+})->name('buku');
