@@ -24,10 +24,10 @@
                 <div class="w-full">
                     <!-- Form Pencarian -->
                     <form>
-                        <div class="flex-grow mx-2 md:mx-4 transition-all duration-300 col-span-9 row-span-2 col-start-3 items-center">
+                        <div class="flex-grow mx-2 md:mx-4 transition-all duration-300 items-center">
                             <div class="relative w-full">
-                                <input type="text" class="w-full p-2 pl-12 text-gray-700 bg-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" placeholder="Cari buku favoritmu...">
-                                <svg class="absolute left-4 top-2 size-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <input type="text" class="w-full p-3 pl-12 text-gray-700 bg-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" placeholder="Cari buku favoritmu...">
+                                <svg class="absolute left-4 top-3 size-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M15 10a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
                                 </svg>
                             </div>
@@ -49,13 +49,13 @@
             <div class="ml-auto flex space-x-4">
                 <!-- Tombol Masuk -->
                 <a href="/login"
-                    class="relative inline-flex items-center justify-center transition-transform transform hover:scale-105 focus:outline-none bg-white border border-blue-500 text-blue-600 py-3 px-4 text-sm font-extrabold rounded-md hover:bg-blue-100 shadow-md">
+                    class="relative inline-flex items-center justify-center focus:outline-none bg-white border border-gray-400 text-black py-3 px-4 text-sm font-semibold rounded-md hover:border-black shadow-md">
                     Masuk
                 </a>
 
                 <!-- Tombol Daftar -->
                 <a href="/register"
-                    class="relative inline-flex items-center justify-center transition-transform transform hover:scale-105 focus:outline-none bg-blue-500 text-white py-3 px-4 text-sm font-extrabold rounded-md hover:bg-blue-600 shadow-md">
+                    class="relative inline-flex items-center justify-center focus:outline-none bg-blue-600 text-white py-3 px-4 text-sm font-semibold rounded-md hover:bg-blue-900 shadow-md">
                     Daftar
                 </a>
             </div>
@@ -66,7 +66,6 @@
     <!-- Keyword Slider Section -->
     <div class="flex w-full items-center justify-center bg-gray-200 p-2">
         <div class="flex flex-wrap justify-center space-x-4 text-xs">
-            <a href="/" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Trending Now</a>
             <a href="#new-arrivals" class="text-gray-700 hover:text-blue-500 font-medium duration-500">New Arrivals</a>
             <a href="#best-seller" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Best Seller</a>
             <a href="#sale" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Sale</a>
