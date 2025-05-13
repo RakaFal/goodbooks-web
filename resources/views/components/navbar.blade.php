@@ -47,6 +47,7 @@
         </div>
         <div class="flex w-2/12">
             <div class="ml-auto flex space-x-4">
+                @guest
                 <!-- Tombol Masuk -->
                 <a href="/login"
                     class="relative inline-flex items-center justify-center focus:outline-none bg-white border border-gray-400 text-black py-3 px-4 text-sm font-semibold rounded-md hover:border-black shadow-md">
@@ -58,6 +59,21 @@
                     class="relative inline-flex items-center justify-center focus:outline-none bg-blue-600 text-white py-3 px-4 text-sm font-semibold rounded-md hover:bg-blue-900 shadow-md">
                     Daftar
                 </a>
+                @endguest
+                @auth
+                <!-- Tampilkan jika sudah login -->
+                <a href="/profile"
+                    class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white font-semibold text-sm hover:bg-blue-800 transition duration-300 shadow-md">
+
+                    @if (auth()->user()->profile_picture)
+                    <img src="{{ asset('storage/' . auth()->user()->profile_picture) }}"
+                        alt="Profile"
+                        class="w-full h-full object-cover rounded-full">
+                    @else
+                    {{ strtoupper(auth()->user()->name[0]) }}
+                    @endif
+                </a>
+                @endauth
             </div>
         </div>
     </div>
