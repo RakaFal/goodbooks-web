@@ -1,15 +1,12 @@
-<footer class="bg-blue-800 text-white py-8">
+<footer class="mt-auto bg-blue-800 text-white py-8">
     <div class="container mx-auto px-6">
-        
         <!-- Footer Links Section -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-
             <!-- About Us -->
             <div>
                 <h3 class="text-xl font-semibold mb-4">About Us</h3>
                 <p class="text-gray-400">GoodBoks is dedicated to providing you with genuine books and a great shopping experience. We strive to support local businesses and promote ethical reading culture.</p>
             </div>
-
             <!-- Useful Links -->
             <div>
                 <h3 class="text-xl font-semibold mb-4">Useful Links</h3>
@@ -20,7 +17,6 @@
                     <li><a href="/terms" class="text-gray-300 hover:text-white transition duration-300">Terms of Service</a></li>
                 </ul>
             </div>
-
             <!-- Quick Links -->
             <div>
                 <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
@@ -30,7 +26,6 @@
                     <li><a href="/sale" class="text-gray-300 hover:text-white transition duration-300">Sale</a></li>
                 </ul>
             </div>
-
             <!-- Social Media Links -->
             <div>
                 <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
@@ -53,7 +48,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Footer Bottom Section -->
         <div class="border-t border-gray-700 mt-8 pt-4 text-center">
             <p class="text-gray-300 text-sm">&copy; 2025 GoodBoks. All rights reserved. Made with love</p>

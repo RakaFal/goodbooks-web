@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
+@include('components.navbar')
+
 @section('content')
 <div class="container mx-auto py-10 mt-25">
     <h2 class="text-2xl font-bold text-gray-700 mb-4">Keranjang Belanja</h2>
-
     @if(session('cart') && count(session('cart')) > 0)
     <div class="bg-white p-4 rounded-lg shadow-md">
         <table class="w-full text-left border-collapse">
@@ -46,7 +47,6 @@
                 @endforeach
             </tbody>
         </table>
-        
         <div class="mt-4 text-right">
             <h3 class="text-lg font-semibold">Total: Rp{{ number_format($total, 0, ',', '.') }}</h3>
             <a href="{{ route('checkout') }}" class="mt-2 inline-block px-6 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600">Checkout</a>
