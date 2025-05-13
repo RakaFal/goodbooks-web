@@ -7,7 +7,7 @@
         <div class="flex items-center space-x-8">
             <!-- Profile Picture -->
             <div class="w-32 h-32 rounded-full overflow-hidden">
-                <img src="{{ asset('storage/profile-pic.jpg') }}" alt="User Profile Picture" class="w-full h-full object-cover">
+                <img src="{{ asset('storage/profile-pic.jpg' . $user->profile_picture) }}" alt="User Profile Picture" class="w-full h-full object-cover">
             </div>
             
             <!-- User Information -->
@@ -37,28 +37,6 @@
         <div class="mt-6 flex space-x-4">
             <a href="{{ route('profile.edit') }}" class="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Edit Profile</a>
             <a href="{{ route('password.request') }}" class="px-6 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700">Change Password</a>
-        </div>
-    </div>
-@endsection
-
-<!-- resources/views/profile.blade.php -->
-
-@extends('layouts.app')
-
-@section('content')
-    <div class="container mx-auto py-10">
-        <div class="flex items-center space-x-8">
-            <!-- Profile Picture -->
-            <div class="w-32 h-32 rounded-full overflow-hidden">
-                <img src="{{ asset('storage/profile-pictures/' . $user->profile_picture) }}" alt="User Profile Picture" class="w-full h-full object-cover">
-            </div>
-            
-            <!-- User Information -->
-            <div>
-                <h2 class="text-3xl font-semibold text-gray-800">{{ $user->name }}</h2>
-                <p class="text-lg text-gray-600">Email: {{ $user->email }}</p>
-                <p class="text-lg text-gray-600">Member since: {{ $user->created_at->format('F Y') }}</p>
-            </div>
         </div>
 
         <!-- Form to Upload Profile Picture -->
