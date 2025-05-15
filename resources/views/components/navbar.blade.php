@@ -1,6 +1,6 @@
 <div class="l-container fixed top-0 z-50 w-full flex flex-col justify-center px-16 bg-gray-100 border border-gray-300"> <!-- Background container dengan warna abu-abu muda -->
     <!-- Navbar Section -->
-    <div class="mt-4 flex items-center"> <!-- Menambahkan margin-bottom untuk jarak yang lebih baik -->
+    <div class="mt-4 flex items-center">
         <div class="w-2/12 hidden md:flex">
             <!-- Logo atau Nama Website -->
             <a href="/" class="text-blue-500 text-lg md:text-xl lg:text-3xl font-bold hover:text-blue-400 transition-all duration-300">
