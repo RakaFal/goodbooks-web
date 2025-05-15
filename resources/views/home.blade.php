@@ -74,7 +74,7 @@
 
         <!-- Kategori 1 -->
         <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
-            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-200 group-hover:bg-blue-600 transition">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
                 <i class="fas fa-book text-4xl text-gray-700 group-hover:text-white transition"></i>
             </div>
             <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Fiksi</span>
@@ -82,7 +82,7 @@
 
         <!-- Kategori 2 -->
         <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
-            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-200 group-hover:bg-blue-600 transition">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
                 <i class="fas fa-briefcase text-4xl text-gray-700 group-hover:text-white transition"></i>
             </div>
             <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Bisnis</span>
@@ -90,7 +90,7 @@
 
         <!-- Kategori 3 -->
         <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
-            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-200 group-hover:bg-blue-600 transition">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
                 <i class="fas fa-flask text-4xl text-gray-700 group-hover:text-white transition"></i>
             </div>
             <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Sains</span>
@@ -98,7 +98,7 @@
 
         <!-- Kategori 4 -->
         <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
-            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-200 group-hover:bg-blue-600 transition">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
                 <i class="fas fa-landmark text-4xl text-gray-700 group-hover:text-white transition"></i>
             </div>
             <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Sejarah</span>
@@ -106,7 +106,7 @@
 
         <!-- Kategori 5 -->
         <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
-            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-200 group-hover:bg-blue-600 transition">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
                 <i class="fas fa-graduation-cap text-4xl text-gray-700 group-hover:text-white transition"></i>
             </div>
             <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Edukasi</span>
@@ -114,7 +114,7 @@
 
         <!-- Kategori 6 -->
         <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
-            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-200 group-hover:bg-blue-600 transition">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
                 <i class="fas fa-child text-4xl text-gray-700 group-hover:text-white transition"></i>
             </div>
             <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Anak-anak</span>
@@ -122,7 +122,7 @@
 
         <!-- Kategori 7 -->
         <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
-            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-200 group-hover:bg-blue-600 transition">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
                 <i class="fas fa-ghost text-4xl text-gray-700 group-hover:text-white transition"></i>
             </div>
             <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Horror</span>
@@ -130,7 +130,7 @@
 
         <!-- Kategori 8 -->
         <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
-            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-200 group-hover:bg-blue-600 transition">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
                 <i class="fas fa-laptop text-4xl text-gray-700 group-hover:text-white transition"></i>
             </div>
             <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Teknologi</span>
