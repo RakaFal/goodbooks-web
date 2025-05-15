@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
-@include('components.navbar')
-
 @section('content')
-<div class="container mx-auto py-10 mt-25">
+
+<div class="container mx-auto py-10 mt-20">
     <h2 class="text-2xl font-bold text-gray-700 mb-4">Keranjang Belanja</h2>
     @if(session('cart') && count(session('cart')) > 0)
     <div class="bg-white p-4 rounded-lg shadow-md">

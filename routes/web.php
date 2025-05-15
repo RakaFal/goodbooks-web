@@ -1,7 +1,9 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Password;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CartController;
@@ -44,6 +46,34 @@ Route::middleware(['auth'])->group(function () {
 
     // Profile
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+    Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
+    Route::post('/profile/update-picture', [ProfileController::class, 'updatePicture'])->name('profile.updatePicture');
+
+    // Forgot Password
+    // Ini adalah route yang akan digunakan ketika user klik "Forgot Password?"
+    Route::get('password/reset', function () {
+        // Menampilkan view 'auth.passwords.email', biasanya berisi form input email
+        return view('auth.passwords.email');
+    })->name('password.request'); // Penting: nama route ini harus 'password.request'
+
+    // Route untuk meng-handle permintaan reset password (mengirim email reset)
+    // Ini adalah proses ketika user sudah mengisi email lalu klik "Send Reset Link"
+    Route::post('password/email', function (Request $request) {
+        // Validasi bahwa email tidak boleh kosong dan harus valid
+        $request->validate(['email' => 'required|email']);
+
+        // Kirim link reset password ke email
+        $status = Password::sendResetLink(
+            $request->only('email') // Ambil hanya email dari input
+        );
+
+        // Jika berhasil, redirect balik dengan status berhasil
+        return $status === Password::RESET_LINK_SENT
+            ? back()->with(['status' => __($status)])
+            // Jika gagal (misalnya email tidak ditemukan), kirim error
+            : back()->withErrors(['email' => __($status)]);
+    })->name('password.email'); // Nama route ini harus 'password.email'
 
     // Cart
     Route::get('/cart', [CartController::class, 'index'])->name('cart.index');

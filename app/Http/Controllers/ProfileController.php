@@ -11,26 +11,51 @@ class ProfileController extends Controller
     public function index()
     {
         $user = Auth::user(); // Mengambil data pengguna yang sedang login
-        return view('profile', compact('user')); // Mengirim data pengguna ke halaman profil
+        return view('profile.profile', compact('user')); // Mengirim data pengguna ke halaman profil
     }
 
-    // Method untuk mengupdate gambar profil
-    public function updateProfilePicture(Request $request)
+    public function edit()
     {
-        // Validasi file gambar yang di-upload
+        $user = Auth::user(); // atau auth()->user()
+        return view('profile.edit', compact('user'));
+    }
+
+    public function update(Request $request)
+    {
         $request->validate([
-            'profile_picture' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048', // Memastikan file yang di-upload adalah gambar
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255|unique:users,email,' . auth()->id(),
+            'phone' => 'nullable|string|max:20',
+            'address' => 'nullable|string|max:255',
+            'bio' => 'nullable|string|max:500',
         ]);
 
-        $user = Auth::user(); // Mengambil data pengguna yang sedang login
+        $user = Auth::user();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->phone = $request->phone;
+        $user->address = $request->address;
+        $user->save();
 
-        // Menyimpan gambar yang di-upload ke folder penyimpanan
-        $path = $request->file('profile_picture')->store('public/profile-pictures');
+        return redirect()->route('profile')->with('success', 'Profil berhasil diperbarui.');
+    }
 
-        // Menyimpan nama gambar ke dalam kolom profile_picture di database
-        $user->profile_picture = basename($path);
-        $user->save(); // Simpan perubahan ke database
+    public function updatePicture(Request $request)
+    {
+        // Validasi input file
+        $request->validate([
+            'profile_picture' => 'required|image|mimes:jpg,jpeg,png|max:2048',
+        ]);
 
-        return redirect()->route('profile')->with('success', 'Profile picture updated successfully.');
+        $user = Auth::user();
+
+        // Jika file ada, simpan ke storage dan update ke database
+        if ($request->hasFile('profile_picture')) {
+            $path = $request->file('profile_picture')->store('profile_pictures', 'public');
+            $user->profile_picture = $path;
+            $user->save();
+        }
+
+        return redirect()->route('profile')->with('success', 'Foto profil berhasil diperbarui.');
     }
 }
