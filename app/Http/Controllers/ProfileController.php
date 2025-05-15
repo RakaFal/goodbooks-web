@@ -24,18 +24,20 @@ class ProfileController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255|unique:users,email,' . auth()->id(),
+            'email' => 'required|email|max:255|unique:users,email,' . Auth::id(),
             'phone' => 'nullable|string|max:20',
             'address' => 'nullable|string|max:255',
-            'bio' => 'nullable|string|max:500',
         ]);
 
+        /** @var User|null $user */
         $user = Auth::user();
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->phone = $request->phone;
-        $user->address = $request->address;
-        $user->save();
+        if ($user) {
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->phone = $request->phone;
+            $user->address = $request->address;
+            $user->save();
+        }
 
         return redirect()->route('profile')->with('success', 'Profil berhasil diperbarui.');
     }
@@ -47,6 +49,7 @@ class ProfileController extends Controller
             'profile_picture' => 'required|image|mimes:jpg,jpeg,png|max:2048',
         ]);
 
+        /** @var User|null $user */
         $user = Auth::user();
 
         // Jika file ada, simpan ke storage dan update ke database
