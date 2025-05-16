@@ -7,7 +7,7 @@
     <div class="flex items-center space-x-4">
         <span class="text-gray-700 font-semibold">{{ auth()->user()->name }}</span>
         @if(auth()->user()->profile_picture)
-        <img src="{{ auth()->user()->profile_picture }}" alt="Seller" class="w-10 h-10 rounded-full object-cover">
+        <img src="{{ asset('storage/' . auth()->user()->profile_picture) }}" alt="Seller" class="w-10 h-10 rounded-full object-cover">
         @else
         <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold">
             {{ strtoupper(auth()->user()->name[0]) }}
