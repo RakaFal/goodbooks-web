@@ -48,11 +48,37 @@
     <!-- Divider -->
     <hr class="my-10 border-gray-300">
 
-    <!-- Action Buttons -->
     <div class="flex flex-wrap gap-4">
-        <a href="{{ route('profile.edit') }}" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md shadow-sm transition duration-200">Edit Profile</a>
-        <a href="{{ route('password.request') }}" class="bg-gray-600 hover:bg-gray-700 text-white px-5 py-2 rounded-md shadow-sm transition duration-200">Change Password</a>
-        <a href="{{ route('dashboard') }}" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-md shadow-sm transition duration-200">Halaman Jualan</a>
+        <a href="{{ route('profile.edit') }}"
+            class="flex items-center gap-3 bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white px-5 py-2 rounded-md shadow-sm transition duration-200"
+            title="Edit Profile">
+            <i class="fas fa-user-edit text-lg"></i>
+            Edit Profile
+        </a>
+
+        <a href="{{ route('password.request') }}"
+            class="flex items-center gap-3 bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 text-white px-5 py-2 rounded-md shadow-sm transition duration-200"
+            title="Change Password">
+            <i class="fas fa-key text-lg"></i>
+            Change Password
+        </a>
+
+        <a href="{{ route('dashboard') }}"
+            class="flex items-center gap-3 bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 text-white px-5 py-2 rounded-md shadow-sm transition duration-200"
+            title="Halaman Jualan">
+            <i class="fas fa-store text-lg"></i>
+            Dashboard Seller
+        </a>
+
+        <form action="{{ route('logout') }}" method="POST" class="inline">
+            @csrf
+            <button type="submit"
+                class="flex items-center gap-3 bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 text-white px-5 py-2 rounded-md shadow-sm transition duration-200 cursor-pointer"
+                title="Logout">
+                <i class="fas fa-sign-out-alt text-lg"></i>
+                Logout
+            </button>
+        </form>
     </div>
 
     <!-- Divider -->

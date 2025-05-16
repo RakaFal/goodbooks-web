@@ -14,8 +14,8 @@ use App\Http\Controllers\SellerDashboardController;
 // Halaman utama
 Route::get('/', function () {
     $books = Book::all(); // ambil semua buku
-    return view('home', compact('books')); // pastikan kamu punya view home.blade.php
-});
+    return view('home', compact('books')); // tampilkan view home dengan data books
+})->name('home');
 
 // Auth: Login
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
