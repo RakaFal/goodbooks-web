@@ -4,16 +4,18 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Password;
+use App\Models\Book;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\CartController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SellerDashboardController;
 
 // Halaman utama
 Route::get('/', function () {
-    return view('home');
-})->name('home');
+    $books = Book::all(); // ambil semua buku
+    return view('home', compact('books')); // pastikan kamu punya view home.blade.php
+});
 
 // Auth: Login
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
@@ -30,7 +32,7 @@ Route::post('/logout', function () {
 })->name('logout');
 
 // Buku detail (akses umum)
-Route::get('/books/{id}', [BookController::class, 'show'])->name('book.detail');
+Route::get('/books/{id}', [BookController::class, 'show'])->name('books.show');
 
 // Halaman hanya untuk user yang login
 Route::middleware(['auth'])->group(function () {

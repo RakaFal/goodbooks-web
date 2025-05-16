@@ -147,30 +147,16 @@
 </section>
 
 <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
-    <div class="bg-white shadow-md p-4 rounded-lg">
-        <img src="{{ asset('images/bulan.png') }}" alt="bulan" class="w-full h-48 object-contain">
-        <h2 class="mt-4 font-bold">Bulan</h2>
-        <p class="text-gray-900">Tere Liye</p>
-        <p class="text-gray-600">Rp 89.000</p>
-    </div>
-    <div class="bg-white shadow-md p-4 rounded-lg">
-        <img src="{{ asset('images/si-anak-kuat.png') }}" alt="si-anak-kuat" class="w-full h-48 object-contain">
-        <h2 class="mt-4 font-bold">Si Anak Kuat</h2>
-        <p class="text-gray-900">Tere Liye</p>
-        <p class="text-gray-600">Rp 79.000</p>
-    </div>
-    <div class="bg-white shadow-md p-4 rounded-lg">
-        <img src="{{ asset('images/laskar-pelangi.png') }}" alt="laskar-pelangi" class="w-full h-48 object-contain">
-        <h2 class="mt-4 font-bold">Laskar Pelangi</h2>
-        <p class="text-gray-900">Andrea Hirata</p>
-        <p class="text-gray-600">Rp 99.000</p>
-    </div>
-    <div class="bg-white shadow-md p-4 rounded-lg">
-        <img src="{{ asset('images/komet-minor.png') }}" alt="komet-minor" class="w-full h-48 object-contain">
-        <h2 class="mt-4 font-bold">Komet Minor</h2>
-        <p class="text-gray-900">Tere Liye</p>
-        <p class="text-gray-600">Rp 89.000</p>
-    </div>
+    @foreach ($books as $book)
+    <a href="{{ route('books.show', $book->id) }}">
+        <div class="bg-white shadow-md p-4 rounded-lg">
+            <img src="{{ asset('storage/' . $book->image) }}" alt="{{ $book->title }}" class="w-full h-48 object-contain">
+            <h2 class="mt-4 font-bold">{{ $book->title }}</h2>
+            <p class="text-gray-900">{{ $book->author }}</p>
+            <p class="text-gray-600">Rp {{ number_format($book->price, 0, ',', '.') }}</p>
+        </div>
+    </a>
+    @endforeach
 </section>
 
 <section class="text-center my-12">
