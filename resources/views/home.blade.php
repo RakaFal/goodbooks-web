@@ -148,7 +148,7 @@
 
 <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
     @foreach ($books as $book)
-    <a href="{{ route('books.show', $book->id) }}">
+    <a href="{{ route('books.show', $book->slug) }}">
         <div class="bg-white shadow-md p-4 rounded-lg">
             <img src="{{ asset('storage/' . $book->image) }}" alt="{{ $book->title }}" class="w-full h-48 object-contain">
             <h2 class="mt-4 font-bold">{{ $book->title }}</h2>

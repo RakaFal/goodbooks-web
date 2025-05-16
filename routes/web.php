@@ -32,7 +32,7 @@ Route::post('/logout', function () {
 })->name('logout');
 
 // Buku detail (akses umum)
-Route::get('/books/{id}', [BookController::class, 'show'])->name('books.show');
+Route::get('/books/{slug}', [BookController::class, 'show'])->name('books.show');
 
 // Halaman hanya untuk user yang login
 Route::middleware(['auth'])->group(function () {
