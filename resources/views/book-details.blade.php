@@ -62,12 +62,16 @@
                 </ul>
             </div>
 
+            @if(Auth::check())
             <form action="{{ route('cart.add', $book->id) }}" method="POST" class="mt-6">
                 @csrf
-                <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md shadow-md transition">
+                <button type="submit" class="self-start bg-blue-600 hover:bg-blue-700 transition text-white font-semibold py-3 px-8 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     Tambah ke Keranjang
                 </button>
             </form>
+            @else
+            <p class="mt-4 text-sm text-red-500">Login untuk menambahkan ke keranjang.</p>
+            @endif
         </div>
     </div>
 </div>

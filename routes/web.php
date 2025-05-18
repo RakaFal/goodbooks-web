@@ -36,7 +36,7 @@ Route::get('/books/{slug}', [BookController::class, 'show'])->name('books.show')
 
 // Halaman hanya untuk user yang login
 Route::middleware(['auth'])->group(function () {
-    
+
     Route::prefix('admin')->group(function () {
         // Dashboard Admin
         Route::get('/dashboard', function () {
