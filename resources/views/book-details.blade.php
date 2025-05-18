@@ -62,9 +62,12 @@
                 </ul>
             </div>
 
-            <button class="self-start bg-blue-600 hover:bg-blue-700 transition text-white font-semibold py-3 px-8 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                Beli Sekarang
-            </button>
+            <form action="{{ route('cart.add', $book->id) }}" method="POST" class="mt-6">
+                @csrf
+                <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md shadow-md transition">
+                    Tambah ke Keranjang
+                </button>
+            </form>
         </div>
     </div>
 </div>
