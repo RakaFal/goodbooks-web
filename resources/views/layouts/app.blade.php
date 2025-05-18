@@ -22,14 +22,14 @@
 <body class="bg-gray-100 min-h-screen flex flex-col">
 
     {{-- Sidebar atau Navbar --}}
-    @if(request()->is('dashboard*'))
+    @if(request()->is('admin/*'))
     <div class="flex min-h-screen">
-        {{-- Sidebar untuk dashboard --}}
+        {{-- Sidebar untuk admin --}}
         <div class="w-64 bg-gray-800 text-white min-h-screen">
             @include('components.sidebar')
         </div>
 
-        {{-- Konten Utama untuk dashboard --}}
+        {{-- Konten Utama untuk admin --}}
         <main class="flex-1 p-6">
             @yield('content')
         </main>
@@ -45,7 +45,7 @@
     @endif
 
     {{-- Footer --}}
-    @if(!request()->is('dashboard*'))
+    @if(request()->is('admin/*'))
     @include('components.footer')
     @endif
 

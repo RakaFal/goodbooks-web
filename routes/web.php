@@ -36,15 +36,18 @@ Route::get('/books/{slug}', [BookController::class, 'show'])->name('books.show')
 
 // Halaman hanya untuk user yang login
 Route::middleware(['auth'])->group(function () {
-    // Dashboard
-    Route::get('/dashboard', function () {
-        return view('admin.dashboard');
-    })->name('dashboard');
+    
+    Route::prefix('admin')->group(function () {
+        // Dashboard Admin
+        Route::get('/dashboard', function () {
+            return view('admin.dashboard');
+        })->name('admin.dashboard');
 
-    // Daftar buku (admin/seller)
-    Route::get('/buku', function () {
-        return view('admin.daftar-buku');
-    })->name('buku');
+        // Daftar Buku Admin
+        Route::get('/buku', function () {
+            return view('admin.daftar-buku');
+        })->name('admin.buku');
+    });
 
     // Profile
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
