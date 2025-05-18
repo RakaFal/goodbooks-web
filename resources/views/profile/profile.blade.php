@@ -56,7 +56,7 @@
             Edit Profile
         </a>
 
-        <a href="{{ route('password.request') }}"
+        <a href="{{ route('password.change') }}"
             class="flex items-center gap-3 bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 text-white px-5 py-2 rounded-md shadow-sm transition duration-200"
             title="Change Password">
             <i class="fas fa-key text-lg"></i>

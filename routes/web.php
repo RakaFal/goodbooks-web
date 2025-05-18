@@ -55,6 +55,10 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
     Route::post('/profile/update-picture', [ProfileController::class, 'updatePicture'])->name('profile.updatePicture');
 
+    // Change Password
+    Route::get('/change-password', [AuthController::class, 'showChangePasswordForm'])->name('password.change');
+    Route::post('/change-password', [AuthController::class, 'updatePassword'])->name('password.update');
+
     // Forgot Password
     // Ini adalah route yang akan digunakan ketika user klik "Forgot Password?"
     Route::get('password/reset', function () {

@@ -54,4 +54,31 @@ class AuthController extends Controller
         // Jika login gagal, kembali dengan pesan error
         return back()->withErrors(['email' => 'Email atau password salah']);
     }
+
+    // Form ganti password
+    public function showChangePasswordForm()
+    {
+        return view('auth.change-password'); // Sesuaikan folder view-nya
+    }
+
+    // Update password
+    public function updatePassword(Request $request)
+    {
+        $request->validate([
+            'current_password' => ['required'],
+            'new_password' => ['required', 'string', 'min:8', 'confirmed'],
+        ]);
+
+        /** @var User|null $user */
+        $user = Auth::user();
+
+        if (!Hash::check($request->current_password, $user->password)) {
+            return back()->withErrors(['current_password' => 'Password lama salah']);
+        }
+
+        $user->password = Hash::make($request->new_password);
+        $user->save();
+
+        return redirect()->route('password.change')->with('success', 'Password berhasil diubah.');
+    }
 }
