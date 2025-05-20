@@ -38,7 +38,6 @@
             <li><strong>Wishlist:</strong>
                 <ul class="list-disc list-inside pl-4">
                     <li>Hujan</li>
-                    <li>Book Title 3</li>
                 </ul>
             </li>
         </ul>
