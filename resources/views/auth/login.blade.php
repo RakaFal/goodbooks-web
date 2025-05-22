@@ -47,7 +47,7 @@
                     <input type="checkbox" name="remember" class="text-blue-500">
                     <span class="ml-2 text-gray-600 text-sm">Ingat saya</span>
                 </label>
-                <a href="#" class="text-sm text-blue-500 hover:underline">Lupa Password?</a>
+                <a href="#" class="text-sm text-blue-500 hover:underline">Forgot Password?</a>
             </div>
 
             <!-- Button submit -->
