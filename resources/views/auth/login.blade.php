@@ -45,7 +45,7 @@
             <div class="flex justify-between items-center my-4">
                 <label class="flex items-center">
                     <input type="checkbox" name="remember" class="text-blue-500">
-                    <span class="ml-2 text-gray-600 text-sm">Ingat saya</span>
+                    <span class="ml-2 text-gray-600 text-sm">Remember Me</span>
                 </label>
                 <a href="#" class="text-sm text-blue-500 hover:underline">Forgot Password?</a>
             </div>
