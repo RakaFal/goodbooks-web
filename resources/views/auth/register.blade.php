@@ -57,7 +57,7 @@
                 <button type="submit" class="w-full mt-6 bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-bold transition duration-300">Daftar
             </div>
 
-            <p class="text-gray-600 text-center mt-4">Sudah punya akun?
+            <p class="text-gray-600 text-center mt-4">Already have an account?
                 <a href="{{ route('login') }}" class="text-blue-500 hover:underline">Login</a>
             </p>
         </form>
