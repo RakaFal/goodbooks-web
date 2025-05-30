@@ -44,7 +44,7 @@
             </div>
 
             <div class="mt-4">
-                <label class="block text-gray-700">Konfirmasi Password</label>
+                <label class="block text-gray-700">Confirm Password</label>
                 <input type="password" name="password_confirmation" class="w-full mt-1 px-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none" placeholder="Ulangi password" required>
             </div>
 
