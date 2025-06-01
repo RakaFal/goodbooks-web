@@ -20,7 +20,7 @@
         <form action="{{ route('register') }}" method="POST" class="mt-6">
             @csrf
             <div>
-                <label class="block text-gray-700">Nama Lengkap</label>
+                <label class="block text-gray-700">Full Name</label>
                 <input type="text" name="name" class="w-full mt-1 px-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none" placeholder="Masukkan nama lengkap" required>
                 @error('name')
                 <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
