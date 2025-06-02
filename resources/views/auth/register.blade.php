@@ -54,7 +54,7 @@
             </div>
 
             <div>
-                <button type="submit" class="w-full mt-6 bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-bold transition duration-300">Daftar
+                <button type="submit" class="w-full mt-6 bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-bold transition duration-300">Register
             </div>
 
             <p class="text-gray-600 text-center mt-4">Already have an account?
