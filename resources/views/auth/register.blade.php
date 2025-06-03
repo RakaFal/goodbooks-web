@@ -50,7 +50,7 @@
 
             <div class="my-4 flex items-center">
                 <input type="checkbox" name="terms" class="text-green-500">
-                <span class="ml-2 text-gray-600 text-sm">Saya menyetujui <a href="#" class="text-blue-500 hover:underline">syarat & ketentuan</a></span>
+                <span class="ml-2 text-gray-600 text-sm">Saya menyetujui <a href="#" class="text-blue-500 hover:underline">Term & Condition</a></span>
             </div>
 
             <div>
