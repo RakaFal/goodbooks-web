@@ -12,17 +12,21 @@
                 <a href="#kategori" onclick="navigateToSection(event, 'kategori')" class="hidden lg:flex relative items-center justify-center transition-colors focus-visible:outline-none disabled:pointer-events-none [&amp;:not(.button--loading)]:disabled:opacity-50 bg-white border border-transparent text-neutral-700 [.dweb_&amp;]:hover:bg-neutral-50 [.dweb_&amp;]:hover:text-neutral-700 active:bg-neutral-50 active:text-neutral-600 [&amp;:not(.button--loading)]:disabled:bg-white [&amp;:not(.button--loading)]:disabled:text-neutral-200 py-3 px-4 text-s-extrabold rounded-s navbar-category-trigger" data-testid="navbarCategory" data-sentry-element="Button" data-sentry-component="NavbarCategory" data-sentry-source-file="NavbarCategoryTrigger.tsx">
                     <div class="">
                         <div class="flex cursor-pointer items-center space-x-2">
-                            <span class="text-s-extrabold" >Kategori</span>
+                            <span class="text-s-extrabold">Kategori</span>
                         </div>
                     </div>
                 </a>
                 <div class="w-full">
                     <!-- Form Pencarian -->
-                    <form>
+                    <form action="/search" method="GET">
                         <div class="flex-grow mx-2 md:mx-4 transition-all duration-300 items-center">
                             <div class="relative w-full">
-                                <input type="text" class="w-full p-3 pl-12 text-gray-700 bg-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" placeholder="Cari buku favoritmu...">
-                                <svg class="absolute left-4 top-3 size-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <!-- Input Search -->
+                                <input type="text" name="query" id="search-input"
+                                    class="w-full p-3 pl-12 text-gray-700 bg-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                                    placeholder="Cari buku favoritmu..." aria-label="Search Books">
+                                <!-- Icon Search -->
+                                <svg class="absolute left-4 top-3 size-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M15 10a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
                                 </svg>
                             </div>
@@ -73,9 +77,9 @@
     <!-- Keyword Slider Section -->
     <div class="hidden md:flex w-full items-center justify-center p-2">
         <div class="flex flex-wrap justify-center space-x-4 text-xs">
-            <a href="#new-arrivals"  onclick="navigateToSection(event, 'new-arrivals')" class="text-gray-700 hover:text-blue-500 font-medium duration-500">New Arrivals</a>
-            <a href="#best-seller"  onclick="navigateToSection(event, 'best-seller')" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Best Seller</a>
-            <a href="#sale"  onclick="navigateToSection(event, 'sale')" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Sale</a>
+            <a href="#new-arrivals" onclick="navigateToSection(event, 'new-arrivals')" class="text-gray-700 hover:text-blue-500 font-medium duration-500">New Arrivals</a>
+            <a href="#best-seller" onclick="navigateToSection(event, 'best-seller')" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Best Seller</a>
+            <a href="#sale" onclick="navigateToSection(event, 'sale')" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Sale</a>
         </div>
     </div>
     <!-- End Keyword Slider Section -->
