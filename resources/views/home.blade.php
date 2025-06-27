@@ -150,41 +150,6 @@
     @endforeach
 </section>
 
-<section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
-    <a href="">
-        <div class="bg-white shadow-md p-4 rounded-lg">
-            <img src="{{ asset('images/mariposa.png') }}" alt="mariposa" class="w-full h-48 object-contain">
-            <h2 class="mt-4 font-bold">Mariposa</h2>
-            <p class="text-gray-900">Luluk HF</p>
-            <p class="text-gray-600">Rp 119.000</p>
-        </div>
-    </a>
-    <a href="">
-        <div class="bg-white shadow-md p-4 rounded-lg">
-            <img src="{{ asset('images/melangkah.png') }}" alt="melangkah" class="w-full h-48 object-contain">
-            <h2 class="mt-4 font-bold">Melangkah</h2>
-            <p class="text-gray-900">J.S. Khairen</p>
-            <p class="text-gray-600">Rp 129.000</p>
-        </div>
-    </a>
-    <a href="">
-        <div class="bg-white shadow-md p-4 rounded-lg">
-            <img src="{{ asset('images/milea.png') }}" alt="milea" class="w-full h-48 object-contain">
-            <h2 class="mt-4 font-bold">Milea</h2>
-            <p class="text-gray-900">Pidi Baiq</p>
-            <p class="text-gray-600">Rp 139.000</p>
-        </div>
-    </a>
-    <a href="">
-        <div class="bg-white shadow-md p-4 rounded-lg">
-            <img src="{{ asset('images/ranah-3-warna.png') }}" alt="ranah-3-warna" class="w-full h-48 object-contain">
-            <h2 class="mt-4 font-bold">Ranah 3 Warna</h2>
-            <p class="text-gray-900">Ahmad Fuadi</p>
-            <p class="text-gray-600">Rp 149.000</p>
-        </div>
-    </a>
-</section>
-
 <section class="text-center my-12">
     <a href="/best-seller" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
         View All
@@ -213,41 +178,6 @@
     </a>
     @endif
     @endforeach
-</section>
-
-<section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
-    <a href="">
-        <div class="bg-white shadow-md p-4 rounded-lg">
-            <img src="{{ asset('images/terusir.png') }}" alt="terusir" class="w-full h-48 object-contain">
-            <h2 class="mt-4 font-bold">Terusir</h2>
-            <p class="text-gray-900">Hamka</p>
-            <p class="text-gray-600">Rp 39.000</p>
-        </div>
-    </a>
-    <a href="">
-        <div class="bg-white shadow-md p-4 rounded-lg">
-            <img src="{{ asset('images/gustira.png') }}" alt="gustira" class="w-full h-48 object-contain">
-            <h2 class="mt-4 font-bold">Gustira</h2>
-            <p class="text-gray-900">Kata Kokoh</p>
-            <p class="text-gray-600">Rp 59.000</p>
-        </div>
-    </a>
-    <a href="">
-        <div class="bg-white shadow-md p-4 rounded-lg">
-            <img src="{{ asset('images/mozachiko.png') }}" alt="mozachiko" class="w-full h-48 object-contain">
-            <h2 class="mt-4 font-bold">Mozachiko</h2>
-            <p class="text-gray-900">Poppi Pertiwi</p>
-            <p class="text-gray-600">Rp 49.000</p>
-        </div>
-    </a>
-    <a href="">
-        <div class="bg-white shadow-md p-4 rounded-lg">
-            <img src="{{ asset('images/ruang-sunyi.png') }}" alt="ruang-sunyi" class="w-full h-48 object-contain">
-            <h2 class="mt-4 font-bold">Ruang Sunyi</h2>
-            <p class="text-gray-900">Herge</p>
-            <p class="text-gray-600">Rp 59.000</p>
-        </div>
-    </a>
 </section>
 
 <section class="text-center my-12">
