@@ -9,10 +9,10 @@
         </div>
         <div class="flex w-7/12 flex-grow items-center">
             <div class="mx-auto flex w-10/12 items-center space-x-4">
-                <a href="#kategori" class="hidden lg:flex relative items-center justify-center transition-colors focus-visible:outline-none disabled:pointer-events-none [&amp;:not(.button--loading)]:disabled:opacity-50 bg-white border border-transparent text-neutral-700 [.dweb_&amp;]:hover:bg-neutral-50 [.dweb_&amp;]:hover:text-neutral-700 active:bg-neutral-50 active:text-neutral-600 [&amp;:not(.button--loading)]:disabled:bg-white [&amp;:not(.button--loading)]:disabled:text-neutral-200 py-3 px-4 text-s-extrabold rounded-s navbar-category-trigger" data-testid="navbarCategory" data-sentry-element="Button" data-sentry-component="NavbarCategory" data-sentry-source-file="NavbarCategoryTrigger.tsx">
+                <a href="#kategori" onclick="navigateToSection(event, 'kategori')" class="hidden lg:flex relative items-center justify-center transition-colors focus-visible:outline-none disabled:pointer-events-none [&amp;:not(.button--loading)]:disabled:opacity-50 bg-white border border-transparent text-neutral-700 [.dweb_&amp;]:hover:bg-neutral-50 [.dweb_&amp;]:hover:text-neutral-700 active:bg-neutral-50 active:text-neutral-600 [&amp;:not(.button--loading)]:disabled:bg-white [&amp;:not(.button--loading)]:disabled:text-neutral-200 py-3 px-4 text-s-extrabold rounded-s navbar-category-trigger" data-testid="navbarCategory" data-sentry-element="Button" data-sentry-component="NavbarCategory" data-sentry-source-file="NavbarCategoryTrigger.tsx">
                     <div class="">
                         <div class="flex cursor-pointer items-center space-x-2">
-                            <span class="text-s-extrabold">Kategori</span>
+                            <span class="text-s-extrabold" >Kategori</span>
                         </div>
                     </div>
                 </a>
@@ -73,9 +73,9 @@
     <!-- Keyword Slider Section -->
     <div class="hidden md:flex w-full items-center justify-center p-2">
         <div class="flex flex-wrap justify-center space-x-4 text-xs">
-            <a href="#new-arrivals" class="text-gray-700 hover:text-blue-500 font-medium duration-500">New Arrivals</a>
-            <a href="#best-seller" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Best Seller</a>
-            <a href="#sale" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Sale</a>
+            <a href="#new-arrivals"  onclick="navigateToSection(event, 'new-arrivals')" class="text-gray-700 hover:text-blue-500 font-medium duration-500">New Arrivals</a>
+            <a href="#best-seller"  onclick="navigateToSection(event, 'best-seller')" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Best Seller</a>
+            <a href="#sale"  onclick="navigateToSection(event, 'sale')" class="text-gray-700 hover:text-blue-500 font-medium duration-500">Sale</a>
         </div>
     </div>
     <!-- End Keyword Slider Section -->

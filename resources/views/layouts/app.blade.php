@@ -54,26 +54,75 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const links = document.querySelectorAll('a[href^="#"]');
+        // Fungsi untuk menangani navigasi ke section
+        function navigateToSection(event, sectionId) {
+            event.preventDefault(); // Mencegah perilaku default link
 
-            links.forEach(link => {
-                link.addEventListener("click", function(event) {
-                    event.preventDefault();
+            // Cek apakah kita berada di halaman home
+            const currentPath = window.location.pathname;
 
-                    const targetId = link.getAttribute("href").substring(1);
-                    const targetElement = document.getElementById(targetId);
+            // Periksa apakah URL adalah halaman home atau halaman lain
+            if (currentPath === '/' || currentPath === '/home') {
+                // Jika berada di halaman home, update URL dengan query parameter tanpa reload halaman
+                history.pushState(null, null, `/?section=${sectionId}`);
+                scrollToSection(sectionId); // Scroll ke section yang dituju
+            } else {
+                // Jika berada di halaman selain home, arahkan ke halaman home dengan query parameter
+                window.location.href = `/?section=${sectionId}`;
+            }
+        }
 
-                    const navbarHeight = document.getElementById('navbar').offsetHeight;
+        // Fungsi untuk scroll ke section dengan ID
+        function scrollToSection(sectionId) {
+            const targetElement = document.getElementById(sectionId); // Cari elemen dengan ID yang sesuai
+            if (targetElement) {
+                // Ambil tinggi navbar jika ada, jika tidak anggap 0
+                const navbarElement = document.getElementById('navbar');
+                const navbarHeight = navbarElement ? navbarElement.offsetHeight : 0;
 
-                    window.scrollTo({
-                        top: targetElement.offsetTop - navbarHeight,
-                        behavior: "smooth"
-                    });
+                // Scroll ke posisi yang sesuai, dengan mengurangi tinggi navbar
+                window.scrollTo({
+                    top: targetElement.offsetTop - navbarHeight,
+                    behavior: 'smooth' // Efek scroll halus
                 });
-            });
-        });
+            } else {
+                console.warn(`Elemen dengan ID '${sectionId}' tidak ditemukan di halaman.`);
+            }
+        }
+
+        // Cek URL saat halaman dimuat untuk scroll otomatis ke section jika ada parameter 'section'
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const sectionId = urlParams.get('section'); // Ambil nilai parameter 'section'
+
+            if (sectionId) {
+                // Periksa apakah elemen dengan ID yang sesuai ada di halaman
+                const targetElement = document.getElementById(sectionId);
+                if (targetElement) {
+                    scrollToSection(sectionId); // Scroll ke section yang sesuai
+                } else {
+                    console.warn(`Elemen dengan ID '${sectionId}' tidak ditemukan di halaman.`);
+                }
+            }
+        };
+
+        // Menangani perubahan state browser saat pengguna menavigasi dengan tombol back/forward
+        window.onpopstate = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const sectionId = urlParams.get('section'); // Ambil nilai parameter 'section'
+
+            if (sectionId) {
+                // Periksa apakah elemen dengan ID yang sesuai ada di halaman
+                const targetElement = document.getElementById(sectionId);
+                if (targetElement) {
+                    scrollToSection(sectionId); // Scroll ke section yang sesuai
+                } else {
+                    console.warn(`Elemen dengan ID '${sectionId}' tidak ditemukan di halaman.`);
+                }
+            }
+        };
 
         const swiper = new Swiper(".mySwiper", {
             speed: 1000,

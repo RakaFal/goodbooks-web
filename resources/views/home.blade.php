@@ -73,7 +73,7 @@
     <div class="grid grid-cols-3 text-center">
 
         <!-- New Arrivals -->
-        <a href="#new-arrivals" class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
+        <a href="#new-arrivals" onclick="navigateToSection(event, 'new-arrivals')" class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
             <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
                 <i class="fas fa-gift text-4xl text-gray-700 group-hover:text-white transition"></i>
             </div>
@@ -81,7 +81,7 @@
         </a>
 
         <!-- Best Seller -->
-        <a href="#best-seller" class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
+        <a href="#best-seller" onclick="navigateToSection(event, 'best-seller')" class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
             <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
                 <i class="fas fa-star text-4xl text-gray-700 group-hover:text-white transition"></i>
             </div>
@@ -89,7 +89,7 @@
         </a>
 
         <!-- Sale -->
-        <a href="#sale" class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
+        <a href="#sale" onclick="navigateToSection(event, 'sale')" class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
             <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
                 <i class="fas fa-tags text-4xl text-gray-700 group-hover:text-white transition"></i>
             </div>
@@ -98,7 +98,7 @@
     </div>
 </section>
 
-<hr class="bg-gray-100" id="new-arrivals">
+<hr class="bg-gray-100" id="new-arrivals" onclick="navigateToSection(event, 'new-arrivals')">
 
 <!-- New Arrival -->
 <section class="text-center py-10 mt-25">
@@ -127,7 +127,7 @@
     </a>
 </section>
 
-<hr class="bg-gray-100" id="best-seller">
+<hr class="bg-gray-100" id="best-seller" onclick="navigateToSection(event, 'best-seller')">
 
 <!-- Best Seller -->
 <section class="text-center py-10 mt-25">
