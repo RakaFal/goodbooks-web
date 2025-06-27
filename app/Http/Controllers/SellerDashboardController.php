@@ -7,9 +7,13 @@ use App\Models\Book;
 
 class SellerDashboardController extends Controller
 {
+    // Menampilkan halaman dashboard penjual
     public function index()
     {
-        // $books = Book::where('seller_id', auth()->id())->get(); // Ambil buku milik seller
-        // return view('seller.dashboard', compact('books'));
+        // Ambil semua buku dari database
+        $books = Book::all();
+
+        // Kirim data buku ke view 'dashboard'
+        return view('admin.daftar-buku', compact('books'));
     }
 }

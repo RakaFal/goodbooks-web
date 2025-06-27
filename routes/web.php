@@ -46,9 +46,23 @@ Route::middleware(['auth'])->group(function () {
         })->name('admin.dashboard');
 
         // Daftar Buku Admin
-        Route::get('/buku', function () {
-            return view('admin.daftar-buku');
-        })->name('admin.buku');
+        Route::get('/buku', [SellerDashboardController::class, 'index'])->name('admin.buku');
+
+        Route::prefix('books')->name('admin.books.')->group(function () {
+            // Menampilkan daftar buku
+            Route::get('/', [BookController::class, 'index'])->name('index');
+
+            // Menambahkan buku
+            Route::get('tambah', [BookController::class, 'create'])->name('tambah');
+            Route::post('tambah', [BookController::class, 'store'])->name('store');
+
+            // Mengedit buku
+            Route::get('edit/{slug}', [BookController::class, 'edit'])->name('edit');
+            Route::put('edit/{slug}', [BookController::class, 'update'])->name('update');
+
+            // Menghapus buku
+            Route::get('hapus/{slug}', [BookController::class, 'destroy'])->name('hapus');
+        });
     });
 
     // Profile
@@ -120,5 +134,4 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/orders/{order}', [OrderController::class, 'show'])
         ->name('orders.details')
         ->scopeBindings();
-
 });
