@@ -61,6 +61,14 @@
             Change Password
         </a>
 
+        <a href="{{ route('orders.shows') }}"
+            class="flex items-center gap-3 bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-900 px-5 py-2 rounded-md shadow-sm transition duration-200"
+            title="Order History">
+            <i class="fas fa-history text-lg"></i>
+            Order History
+        </a>
+
+
         <a href="{{ route('admin.dashboard') }}"
             class="flex items-center gap-3 bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 text-white px-5 py-2 rounded-md shadow-sm transition duration-200"
             title="Halaman Jualan">

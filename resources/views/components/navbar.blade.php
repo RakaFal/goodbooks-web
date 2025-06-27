@@ -48,15 +48,13 @@
         <div class="hidden md:flex w-2/12">
             <div class="ml-auto flex space-x-4">
                 @guest
-                <!-- Tombol Masuk -->
                 <a href="/login"
                     class="relative inline-flex items-center justify-center focus:outline-none bg-white border border-gray-400 text-black py-3 px-4 text-sm font-semibold rounded-md hover:border-black shadow-md">
-                    Masuk
+                    Login
                 </a>
-                <!-- Tombol Daftar -->
                 <a href="/register"
                     class="relative inline-flex items-center justify-center focus:outline-none bg-blue-600 text-white py-3 px-4 text-sm font-semibold rounded-md hover:bg-blue-900 shadow-md">
-                    Daftar
+                    Register
                 </a>
                 @endguest
                 @auth

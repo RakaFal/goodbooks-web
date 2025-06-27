@@ -50,7 +50,7 @@
         </div>
         <!-- Footer Bottom Section -->
         <div class="border-t border-gray-700 mt-8 pt-4 text-center">
-            <p class="text-gray-300 text-sm">&copy; 2025 GoodBoks. All rights reserved. Made with love</p>
+            <p class="text-gray-300 text-sm">&copy; 2025 GoodBoks. All rights reserved. Made with <i class="fas fa-heart text-red-500"></i></p>
         </div>
     </div>
 </footer>

@@ -45,7 +45,7 @@
     @endif
 
     {{-- Footer --}}
-    @if(request()->is('admin/*'))
+    @if(!request()->is('admin/*'))
     @include('components.footer')
     @endif
 

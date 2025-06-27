@@ -8,6 +8,8 @@ use App\Models\Book;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SellerDashboardController;
 
@@ -91,5 +93,32 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/cart/remove/{id}', [CartController::class, 'remove'])->name('cart.remove');
 
     // Checkout
-    Route::get('/checkout', [CartController::class, 'checkout'])->name('checkout');
+    Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout');
+    Route::post('/checkout', [CheckoutController::class, 'process'])->name('checkout.process');
+
+    // Payment
+    Route::get('/payment/{order}', [CheckoutController::class, 'payment'])->name('payment');
+    Route::get('/payment/{order}/pay/{method}', [CheckoutController::class, 'handlePayment'])->name('payment.process');
+
+    Route::get('/payment/{order}/card', function ($orderId) {
+        $order = \App\Models\Order::findOrFail($orderId);
+        return view('payments.card', compact('order'));
+    })->name('payment.card');
+
+    Route::get('/payment/{order}/bank', function ($orderId) {
+        $order = \App\Models\Order::findOrFail($orderId);
+        return view('payments.bank', compact('order'));
+    })->name('payment.bank');
+
+    Route::get('/payment/{order}/qris', function ($orderId) {
+        $order = \App\Models\Order::findOrFail($orderId);
+        return view('payments.qris', compact('order'));
+    })->name('payment.qris');
+
+    // Orders History
+    Route::get('/orders', [OrderController::class, 'index'])->name('orders.shows');
+    Route::get('/orders/{order}', [OrderController::class, 'show'])
+        ->name('orders.details')
+        ->scopeBindings();
+
 });
