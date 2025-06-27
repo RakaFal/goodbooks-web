@@ -68,77 +68,37 @@
 </section>
 
 <!-- Kategori Bergambar -->
-<section class="container mx-auto p-4 rounded-lg shadow-2xl">
+<section id="kategori" class="container mx-auto p-4 rounded-lg shadow-2xl">
     <h2 class="text-xl md:text-2xl font-bold text-gray-700 text-center mb-4">Kategori Populer</h2>
-    <div class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-4 text-center">
+    <div class="grid grid-cols-3 text-center">
 
-        <!-- Kategori 1 -->
-        <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
+        <!-- New Arrivals -->
+        <a href="#new-arrivals" class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
             <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
-                <i class="fas fa-book text-4xl text-gray-700 group-hover:text-white transition"></i>
+                <i class="fas fa-gift text-4xl text-gray-700 group-hover:text-white transition"></i>
             </div>
-            <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Fiksi</span>
-        </div>
+            <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">New Arrivals</span>
+        </a>
 
-        <!-- Kategori 2 -->
-        <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
+        <!-- Best Seller -->
+        <a href="#best-seller" class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
             <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
-                <i class="fas fa-briefcase text-4xl text-gray-700 group-hover:text-white transition"></i>
+                <i class="fas fa-star text-4xl text-gray-700 group-hover:text-white transition"></i>
             </div>
-            <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Bisnis</span>
-        </div>
+            <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Best Seller</span>
+        </a>
 
-        <!-- Kategori 3 -->
-        <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
+        <!-- Sale -->
+        <a href="#sale" class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
             <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
-                <i class="fas fa-flask text-4xl text-gray-700 group-hover:text-white transition"></i>
+                <i class="fas fa-tags text-4xl text-gray-700 group-hover:text-white transition"></i>
             </div>
-            <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Sains</span>
-        </div>
-
-        <!-- Kategori 4 -->
-        <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
-            <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
-                <i class="fas fa-landmark text-4xl text-gray-700 group-hover:text-white transition"></i>
-            </div>
-            <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Sejarah</span>
-        </div>
-
-        <!-- Kategori 5 -->
-        <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
-            <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
-                <i class="fas fa-graduation-cap text-4xl text-gray-700 group-hover:text-white transition"></i>
-            </div>
-            <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Edukasi</span>
-        </div>
-
-        <!-- Kategori 6 -->
-        <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
-            <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
-                <i class="fas fa-child text-4xl text-gray-700 group-hover:text-white transition"></i>
-            </div>
-            <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Anak-anak</span>
-        </div>
-
-        <!-- Kategori 7 -->
-        <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
-            <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
-                <i class="fas fa-ghost text-4xl text-gray-700 group-hover:text-white transition"></i>
-            </div>
-            <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Horror</span>
-        </div>
-
-        <!-- Kategori 8 -->
-        <div class="flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300 group">
-            <div class="w-16 h-16 flex items-center justify-center rounded-full group-hover:bg-blue-600 transition">
-                <i class="fas fa-laptop text-4xl text-gray-700 group-hover:text-white transition"></i>
-            </div>
-            <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Teknologi</span>
-        </div>
+            <span class="mt-2 text-sm md:text-base text-gray-700 group-hover:text-blue-600 transition">Sale</span>
+        </a>
     </div>
 </section>
 
-<hr style="color: #f3f4f6" id="new-arrivals">
+<hr class="bg-gray-100" id="new-arrivals">
 
 <!-- New Arrival -->
 <section class="text-center py-10 mt-25">
@@ -148,6 +108,7 @@
 
 <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
     @foreach ($books as $book)
+    @if ($book->id_category == 1)
     <a href="{{ route('books.show', $book->slug) }}">
         <div class="bg-white shadow-md p-4 rounded-lg">
             <img src="{{ asset('storage/' . $book->image) }}" alt="{{ $book->title }}" class="w-full h-48 object-contain">
@@ -156,21 +117,37 @@
             <p class="text-gray-600">Rp {{ number_format($book->price, 0, ',', '.') }}</p>
         </div>
     </a>
+    @endif
     @endforeach
 </section>
 
 <section class="text-center my-12">
-    <a href="/produk" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+    <a href="/new-arrivals" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
         View All
     </a>
 </section>
 
-<hr style="color: #f3f4f6" id="best-seller">
+<hr class="bg-gray-100" id="best-seller">
 
 <!-- Best Seller -->
 <section class="text-center py-10 mt-25">
     <h1 class="text-4xl font-bold text-blue-600">Best Seller</h1>
     <p class="text-gray-700 mt-4">Temukan berbagai buku favoritmu dengan harga terbaik!</p>
+</section>
+
+<section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+    @foreach ($books as $book)
+    @if ($book->id_category == 2)
+    <a href="{{ route('books.show', $book->slug) }}">
+        <div class="bg-white shadow-md p-4 rounded-lg">
+            <img src="{{ asset('storage/' . $book->image) }}" alt="{{ $book->title }}" class="w-full h-48 object-contain">
+            <h2 class="mt-4 font-bold">{{ $book->title }}</h2>
+            <p class="text-gray-900">{{ $book->author }}</p>
+            <p class="text-gray-600">Rp {{ number_format($book->price, 0, ',', '.') }}</p>
+        </div>
+    </a>
+    @endif
+    @endforeach
 </section>
 
 <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -209,18 +186,33 @@
 </section>
 
 <section class="text-center my-12">
-    <a href="/produk" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+    <a href="/best-seller" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
         View All
     </a>
 </section>
 
-<hr style="color: #f3f4f6" id="sale">
+<hr class="bg-gray-100" id="sale">
 
 <!-- Sale -->
 
 <section class="text-center py-10 mt-25">
     <h1 class="text-4xl font-bold text-blue-600">Sale</h1>
     <p class="text-gray-700 mt-4">Temukan berbagai buku favoritmu dengan harga terbaik!</p>
+</section>
+
+<section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+    @foreach ($books as $book)
+    @if ($book->id_category == 3)
+    <a href="{{ route('books.show', $book->slug) }}">
+        <div class="bg-white shadow-md p-4 rounded-lg">
+            <img src="{{ asset('storage/' . $book->image) }}" alt="{{ $book->title }}" class="w-full h-48 object-contain">
+            <h2 class="mt-4 font-bold">{{ $book->title }}</h2>
+            <p class="text-gray-900">{{ $book->author }}</p>
+            <p class="text-gray-600">Rp {{ number_format($book->price, 0, ',', '.') }}</p>
+        </div>
+    </a>
+    @endif
+    @endforeach
 </section>
 
 <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -250,7 +242,7 @@
     </a>
     <a href="">
         <div class="bg-white shadow-md p-4 rounded-lg">
-            <img src="{{ asset('images/ruang-sunyi.png') }}" alt="ruang-sunyi-" class="w-full h-48 object-contain">
+            <img src="{{ asset('images/ruang-sunyi.png') }}" alt="ruang-sunyi" class="w-full h-48 object-contain">
             <h2 class="mt-4 font-bold">Ruang Sunyi</h2>
             <p class="text-gray-900">Herge</p>
             <p class="text-gray-600">Rp 59.000</p>
@@ -259,7 +251,7 @@
 </section>
 
 <section class="text-center my-12">
-    <a href="/produk" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+    <a href="/sale" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
         View All
     </a>
 </section>

@@ -29,23 +29,6 @@
     <!-- Divider -->
     <hr class="my-10 border-gray-300">
 
-    <!-- User Preferences Section -->
-    <div>
-        <h3 class="text-2xl font-semibold text-gray-800 mb-4">📚 Book Preferences</h3>
-        <ul class="space-y-1 text-gray-700">
-            <li><strong>Favorite Genre:</strong> Fiction</li>
-            <li><strong>Preferred Formats:</strong> Hardback, eBook</li>
-            <li><strong>Wishlist:</strong>
-                <ul class="list-disc list-inside pl-4">
-                    <li>Hujan</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <!-- Divider -->
-    <hr class="my-10 border-gray-300">
-
     <div class="flex flex-wrap gap-4">
         <a href="{{ route('profile.edit') }}"
             class="flex items-center gap-3 bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white px-5 py-2 rounded-md shadow-sm transition duration-200"
@@ -62,12 +45,11 @@
         </a>
 
         <a href="{{ route('orders.shows') }}"
-            class="flex items-center gap-3 bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-900 px-5 py-2 rounded-md shadow-sm transition duration-200"
+            class="flex items-center gap-3 bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 text-white px-5 py-2 rounded-md shadow-sm transition duration-200"
             title="Order History">
             <i class="fas fa-history text-lg"></i>
             Orders History
         </a>
-
 
         <a href="{{ route('admin.dashboard') }}"
             class="flex items-center gap-3 bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 text-white px-5 py-2 rounded-md shadow-sm transition duration-200"
