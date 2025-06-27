@@ -1,24 +1,14 @@
 <footer class="mt-auto bg-blue-800 text-white py-8">
     <div class="container mx-auto px-6">
         <!-- Footer Links Section -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             <!-- About Us -->
-            <div>
+            <div class="text-center">
                 <h3 class="text-xl font-semibold mb-4">About Us</h3>
-                <p class="text-gray-400">GoodBoks is dedicated to providing you with genuine books and a great shopping experience. We strive to support local businesses and promote ethical reading culture.</p>
-            </div>
-            <!-- Useful Links -->
-            <div>
-                <h3 class="text-xl font-semibold mb-4">Useful Links</h3>
-                <ul>
-                    <li><a href="/about" class="text-gray-300 hover:text-white transition duration-300">About Us</a></li>
-                    <li><a href="/contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a></li>
-                    <li><a href="/privacy-policy" class="text-gray-300 hover:text-white transition duration-300">Privacy Policy</a></li>
-                    <li><a href="/terms" class="text-gray-300 hover:text-white transition duration-300">Terms of Service</a></li>
-                </ul>
+                <p class="text-gray-400">GoodBoks is committed to offering genuine books and a smooth shopping experience, while supporting local businesses and promoting ethical reading practices.</p>
             </div>
             <!-- Quick Links -->
-            <div>
+            <div class="text-center">
                 <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
                 <ul>
                     <li><a href="/new-arrivals" class="text-gray-300 hover:text-white transition duration-300">New Arrivals</a></li>
@@ -27,9 +17,9 @@
                 </ul>
             </div>
             <!-- Social Media Links -->
-            <div>
+            <div class="text-center">
                 <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
-                <div class="flex space-x-4">
+                <div class="flex justify-center space-x-4">
                     <a href="https://www.facebook.com/" class="text-gray-300 hover:text-white transition duration-300">
                         <i class="fab fa-facebook-f"></i>
                     </a>
