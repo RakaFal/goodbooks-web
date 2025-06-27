@@ -121,8 +121,8 @@
     @endforeach
 </section>
 
-<section class="text-center my-12">
-    <a href="/new-arrivals" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+<section class="text-center my-20">
+    <a href="/" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
         View All
     </a>
 </section>
@@ -150,8 +150,8 @@
     @endforeach
 </section>
 
-<section class="text-center my-12">
-    <a href="/best-seller" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+<section class="text-center my-20">
+    <a href="/" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
         View All
     </a>
 </section>
@@ -180,8 +180,8 @@
     @endforeach
 </section>
 
-<section class="text-center my-12">
-    <a href="/sale" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+<section class="text-center my-20">
+    <a href="/" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
         View All
     </a>
 </section>
