@@ -3,7 +3,7 @@
 @section('content')
 
 <nav class="bg-white p-4 shadow-md rounded-md flex justify-between items-center mb-6">
-    <h2 class="text-xl font-bold text-gray-700">Dashboard Penjual</h2>
+    <h2 class="text-xl font-bold text-gray-700">Seller Dashboard</h2>
     <div class="flex items-center space-x-4">
         <span class="text-gray-700 font-semibold">{{ auth()->user()->name }}</span>
         @if(auth()->user()->profile_picture)

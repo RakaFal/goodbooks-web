@@ -55,7 +55,7 @@
             class="flex items-center gap-3 bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 text-white px-5 py-2 rounded-md shadow-sm transition duration-200"
             title="Halaman Jualan">
             <i class="fas fa-store text-lg"></i>
-            Dashboard Seller
+            Seller Dashboard
         </a>
 
         <form action="{{ route('logout') }}" method="POST" class="inline">
