@@ -9,9 +9,9 @@
         </div>
         <div class="flex w-7/12 flex-grow items-center">
             <div class="mx-auto flex w-10/12 items-center space-x-4">
-                <a href="#kategori" onclick="navigateToSection(event, 'kategori')" class="hidden lg:flex relative items-center justify-center transition-colors focus-visible:outline-none disabled:pointer-events-none [&amp;:not(.button--loading)]:disabled:opacity-50 bg-white border border-transparent text-neutral-700 [.dweb_&amp;]:hover:bg-neutral-50 [.dweb_&amp;]:hover:text-neutral-700 active:bg-neutral-50 active:text-neutral-600 [&amp;:not(.button--loading)]:disabled:bg-white [&amp;:not(.button--loading)]:disabled:text-neutral-200 py-3 px-4 text-s-extrabold rounded-s navbar-category-trigger" data-testid="navbarCategory" data-sentry-element="Button" data-sentry-component="NavbarCategory" data-sentry-source-file="NavbarCategoryTrigger.tsx">
+                <a href="#kategori" onclick="navigateToSection(event, 'kategori')" class="hidden lg:flex relative items-center justify-center transition-colors">
                     <div class="">
-                        <div class="flex cursor-pointer items-center space-x-2">
+                        <div class="text-gray-700 hover:text-blue-500 font-medium duration-500">
                             <span class="text-s-extrabold">Kategori</span>
                         </div>
                     </div>
@@ -35,11 +35,23 @@
                 </div>
                 <div class="relative">
                     <!-- Tombol Keranjang (Cart) -->
-                    <a href="/cart" class="hidden md:flex items-center rounded-full outline-none disabled:pointer-events-none border border-transparent text-gray-600 hover:bg-gray-100 p-3 transition duration-300">
+                    <a href="{{ route('cart.index') }}" class="hidden md:flex items-center rounded-full outline-none disabled:pointer-events-none border border-transparent text-gray-600 hover:bg-gray-100 p-3 transition duration-300 relative">
                         <!-- Ikon keranjang -->
                         <svg class="text-gray-600" style="font-size:24px" fill="currentColor" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.5 4.25c0-.41.34-.75.75-.75h.56c.95 0 1.52.64 1.84 1.23.22.4.38.86.5 1.27h12.6c.83 0 1.43.8 1.2 1.6L18.12 14a2.75 2.75 0 0 1-2.64 2H9.53a2.75 2.75 0 0 1-2.65-2.02l-.76-2.78-1.26-4.24v-.01c-.16-.57-.3-1.1-.52-1.5C4.13 5.07 3.96 5 3.8 5h-.56a.75.75 0 0 1-.75-.75Zm5.07 6.59.75 2.74c.15.54.65.92 1.21.92h5.95c.56 0 1.05-.37 1.2-.9l1.74-6.1H6.59l.97 3.29.01.05ZM11 19a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm-1.5 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0Zm8.5 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm-1.5 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0Z" fill="currentColor"></path>
                         </svg>
+
+                        <!-- Menampilkan jumlah item -->
+                        @php
+                        $totalQuantity = 0;
+                        $cart = session()->get('cart', []);
+                        foreach ($cart as $item) {
+                        $totalQuantity += $item['quantity'];
+                        }
+                        @endphp
+                        @if($totalQuantity > 0)
+                        <span class="absolute top-0 right-0 flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-red-500 rounded-full -mr-2">{{ $totalQuantity }}</span>
+                        @endif
                     </a>
                 </div>
             </div>
