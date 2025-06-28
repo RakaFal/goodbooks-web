@@ -16,62 +16,10 @@
     </div>
 </nav>
 
-<!-- Dashboard Content -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <!-- Statistik Cards -->
-    <div class="bg-white shadow-lg rounded-lg p-6">
-        <h3 class="text-lg font-semibold text-gray-700">Total Buku</h3>
-        <p class="text-4xl font-bold text-blue-600">12</p>
-    </div>
-    <div class="bg-white shadow-lg rounded-lg p-6">
-        <h3 class="text-lg font-semibold text-gray-700">Total Pesanan</h3>
-        <p class="text-4xl font-bold text-green-600">34</p>
-    </div>
-    <div class="bg-white shadow-lg rounded-lg p-6">
-        <h3 class="text-lg font-semibold text-gray-700">Pendapatan</h3>
-        <p class="text-4xl font-bold text-yellow-600">Rp 2.500.000</p>
-    </div>
-</div>
-
 <!-- Grafik -->
 <div class="mt-8 bg-white shadow-lg rounded-lg p-6">
     <h3 class="text-xl font-semibold text-gray-700 mb-4">Grafik Penjualan Bulanan</h3>
     <canvas id="salesChart"></canvas>
-</div>
-
-<!-- Daftar Buku -->
-<div class="mt-8 bg-white shadow-lg rounded-lg p-6">
-    <h3 class="text-xl font-semibold text-gray-700 mb-4">Daftar Buku</h3>
-    <table class="w-full border-collapse border border-gray-300">
-        <thead>
-            <tr class="bg-gray-100">
-                <th class="border border-gray-300 p-3 text-left">Judul</th>
-                <th class="border border-gray-300 p-3 text-left">Harga</th>
-                <th class="border border-gray-300 p-3 text-left">Stok</th>
-                <th class="border border-gray-300 p-3 text-left">Aksi</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="hover:bg-gray-50 transition">
-                <td class="border border-gray-300 p-3">Buku A</td>
-                <td class="border border-gray-300 p-3">Rp 50.000</td>
-                <td class="border border-gray-300 p-3">10</td>
-                <td class="border border-gray-300 p-3">
-                    <a href="#" class="text-blue-500 hover:underline">Edit</a> |
-                    <a href="#" class="text-red-500 hover:underline">Hapus</a>
-                </td>
-            </tr>
-            <tr class="hover:bg-gray-50 transition">
-                <td class="border border-gray-300 p-3">Buku B</td>
-                <td class="border border-gray-300 p-3">Rp 75.000</td>
-                <td class="border border-gray-300 p-3">5</td>
-                <td class="border border-gray-300 p-3">
-                    <a href="#" class="text-blue-500 hover:underline">Edit</a> |
-                    <a href="#" class="text-red-500 hover:underline">Hapus</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
 </div>
 
 @endsection

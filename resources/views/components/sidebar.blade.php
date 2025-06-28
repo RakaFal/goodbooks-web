@@ -12,13 +12,7 @@
             <a href="{{ route('admin.buku') }}" class="block py-3 px-4 mb-3 hover:bg-blue-500 rounded-lg transition">
                 Daftar Buku
             </a>
-            <a href="#" class="block py-3 px-4 mb-3 hover:bg-blue-500 rounded-lg transition">
-                Pesanan
-            </a>
-            <a href="#" class="block py-3 px-4 mb-3 hover:bg-blue-500 rounded-lg transition">
-                Laporan
-            </a>
-
+            
             <!-- Logout Form -->
             <form action="{{ route('logout') }}" method="POST">
                 @csrf
