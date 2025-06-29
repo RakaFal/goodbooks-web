@@ -6,9 +6,17 @@ use App\Models\Book;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class BookController extends Controller
 {
+    // Menampilkan detail buku
+    public function show($slug)
+    {
+        $book = Book::where('slug', $slug)->firstOrFail();
+        return view('book-details', compact('book'));
+    }
+
     // Fungsi helper buat generate slug unik
     private function generateUniqueSlug($title, $ignoreId = null)
     {
